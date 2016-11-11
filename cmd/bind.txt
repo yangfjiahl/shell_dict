@@ -1,0 +1,55 @@
+<h2>语法</h2> 
+<p>bing [-dlv] [-f&lt;按键配置文件&gt;] [-m&lt;按键配置&gt;] [-q&lt;功能&gt;]</p> 
+<h2>功能介绍</h2> 
+<p>用户可以利用bind命令了解有哪些按键组合机器功能，也可自行指定还要用哪些按键组合。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-d</td> 
+   <td align="left">显示按键配置的内容</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f&lt;按键配置文件&gt;</td> 
+   <td align="left">载入制定按键配置文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-l</td> 
+   <td align="left">列出所有的功能</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-m&lt;按键配置&gt;</td> 
+   <td align="left">制定按键配置。系统系统了 emacs、emacs-meta、emacs-ctlx、vi、vi-move 与 vi-insert 等按键配置。默认的按键配置为 emacs</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-q&lt;功能&gt;</td> 
+   <td align="left">显示制定功能的按键</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v</td> 
+   <td align="left">列出当前的按键配置与其功能</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>查询当要显示 shell 版本是，所需按下的按键是什么：</p> 
+<pre><code class="language-bash"># bind -l | grep version
+display-shell-version
+do-lowercase-version
+</code></pre> 
+<p>显示 vi 的按键配置与其相关功能：</p> 
+<pre><code class="language-bash"># bind -m vi -v
+set bind-tty-special-chars on
+set blink-matching-paren on
+set byte-oriented off
+set completion-ignore-case off
+set convert-meta off
+set disable-completion off
+...
+</code></pre>

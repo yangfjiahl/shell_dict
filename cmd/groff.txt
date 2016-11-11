@@ -1,0 +1,39 @@
+<h2>语法</h2> 
+<p>groff [ -abehilpstvzCENRSUVXZ ] [ -wname ] [ -Wname ] [ -mname ] [ -Fdir ] [ -Idir ] [ -Tdev ] [ -ffam ] [ -Mdir ] [ -dcs ] [ -rcn ] [ -nnum ] [ -olist ] [ -Parg ] [ -Larg ] [ files… ]</p> 
+<h2>功能介绍</h2> 
+<p>groff 是 groff 文档排版系统的前端。 一般来说， 它运行 troff 程序和一个同选择的设备相对应的后处理器。</p> 
+<h2>参数</h2> 
+<p>-h 打印帮助信息。</p> 
+<p>-e 用 eqn 预处理。</p> 
+<p>-t 用 tbl 预处理。</p> 
+<p>-p 用 pic 预处理。</p> 
+<p>-s 用 soelim 预处理。</p> 
+<p>-Idir 此选项在 soelim(1) 中描述。 此选项包含 -s 选项。</p> 
+<p>-R 用 refer 预处理。 没有传输参数给 refer 的机制， 因为很多 refer 选项在文件里有相应的命令。 细节请参照 refer(1)。</p> 
+<p>-v 使 groff 运行的程序打印出版本号。</p> 
+<p>-V 在标准输出打印管道线， 而不执行它。</p> 
+<p>-z 禁止 troff 输出。 只有出错信息显示出来。</p> 
+<p>-Z 不后处理 troff 的输出。 一般 groff 会自动运行相应的后处理器。</p> 
+<p>-Parg 把 arg 传给后处理器。 每个参数都要用单独的 -P 选项分开。 注意 groff 在传 arg 给后处理器时不会在前加上 - 。</p> 
+<p>-l 把输出送到打印机， 所用的命令在设备描述文件中用 print 命令分开。</p> 
+<p>-Larg 把 arg 传给打印机。 每个参数都要用单独的 -L 选项分开。 注意 groff 在传 arg 给后处理器时不会在前加上 - 。</p> 
+<p>-Tdev 生成针对 dev 设备的输出。 默认的设备是 ps。</p> 
+<p>-X 用 gxditview 预览， 而不是用一般的后处理器。 Groff 会传给 gxditview 一个 -printCommand 选项， 这样如果有 -l 选项 Print 就会做 groff 会做的事。 除非有 -Tps 选项， 否则这并不能产生好的输出。 -N 在 eqn 分割符出不产生新行符（newline）。 这个同 eqn 中的 -N 选项有一样的作用。</p> 
+<p>-S 安全模式。 把 -S 选项传给 pic 并且对 troff 用 -msafer 宏。 （默认开启）</p> 
+<p>-U 不安全模式。 用以前的不安全的特性。</p> 
+<p>-a</p> 
+<p>-b</p> 
+<p>-i</p> 
+<p>-C</p> 
+<p>-E</p> 
+<p>-wname</p> 
+<p>-Wname</p> 
+<p>-mname</p> 
+<p>-olist</p> 
+<p>-dcs</p> 
+<p>-rcn</p> 
+<p>-Fdir</p> 
+<p>-Mdir</p> 
+<p>-ffam</p> 
+<p>-nnum</p> 
+<h2>例子</h2>

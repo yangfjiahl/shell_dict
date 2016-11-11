@@ -1,0 +1,31 @@
+<h2>语法</h2> 
+<p>aumix [-123bilmoprstvwWx] [(+/-)强度] [PqR] [-dfhIlqS]</p> 
+<h2>功能介绍</h2> 
+<p>设置各项音效设置的信号强度，以及制定播放与录音的设备。</p> 
+<p>[-123bilmoprstvwWx] 为频道参数，用来指定设备的频道；</p> 
+<p>[PqR] 可用来制定播放或录音设备；</p> 
+<p>[-dfhIlqS] 则为命令参数。若不加任何参数，aumix 会显示简单的图形界面工调整设置。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

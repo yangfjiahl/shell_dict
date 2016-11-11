@@ -1,0 +1,20 @@
+<h2>语法</h2> 
+<p>timeconfig [–arc] [–test] [时区名称]</p> 
+<h2>功能介绍</h2> 
+<p>这是 RelHat 公司遵循GPL规则开发的程序，具有互动式操作界面，可以轻易地利用方向键和空白键等，设置系统时间所属的时区。也可指定参数和时区名称，直接设置时区而不通过互动式界面。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">–test</td> 
+   <td align="left">仅做测试，不真正设置时区</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

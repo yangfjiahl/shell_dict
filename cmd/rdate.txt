@@ -1,0 +1,30 @@
+<h2>语法</h2> 
+<p>rdate</p> 
+<h2>功能介绍</h2> 
+<p>执行rdate命令，想其他主机询问系统时间并显示出来。该命令遵循RFC868规范，传输日期和时间的信息。系统管理者可通过这个命令校对、调整本地主机的系统时间。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-p</td> 
+   <td align="left">显示远程主机的日志与时间。此为默认值。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s</td> 
+   <td align="left">把从远程主机接收到的日期和时间存回本地主机的系统时间。</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示 time.odin.org 主机的日志与时间：</p> 
+<pre><code class="language-bash"># rdate time.odin.org
+</code></pre> 
+<p>从 time.odin.og 主机下载日期与时间的信息，并以其wie标准来调整系统时间：</p> 
+<pre><code class="language-bash"># rdate -s time.odin.org
+</code></pre>

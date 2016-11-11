@@ -1,0 +1,7 @@
+<h2>语法</h2> 
+<p>suspend [-f]</p> 
+<h2>功能介绍</h2> 
+<p>suspend为shell内建指令，可暂停目前正在执行的shell。若要恢复，则必须使用SIGCONT信息。</p> 
+<h2>参数</h2> 
+<p>-f 　若目前执行的shell为登入的shell，则suspend预设无法暂停此shell。若要强迫暂停登入的shell，则必须使用-f参数。</p> 
+<h2>例子</h2>

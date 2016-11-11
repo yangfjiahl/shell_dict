@@ -1,0 +1,18 @@
+<h2>语法</h2> 
+<p>lsmod</p> 
+<h2>功能介绍</h2> 
+<p>执行 lsmod 命令，会列出所有已载入系统的模块。 Linux 操作系统的内核具有模块化的特征，因此在编译内核时，无需把全部的功能放入内核。可以将这些功能编译成一个个独立的模块，带有需要时在分别载入。</p> 
+<h2>参数</h2> 
+<p>无</p> 
+<h2>例子</h2> 
+<p>查看当前系统已经加载的模块：</p> 
+<pre><code class="language-bash"># lsmod
+Module                  Size  Used by
+appex3                282900  0 
+appex2                282900  0 
+appex1                282900  0 
+appex0                282900  0 
+ext3                  240013  1 
+jbd                    80858  1 ext3
+...
+</code></pre>

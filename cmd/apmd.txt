@@ -1,0 +1,53 @@
+<h2>语法</h2> 
+<p>apmd [-quvVW] [-p &lt;百分比变化量&gt;] [-w &lt;百分比值&gt;]</p> 
+<h2>功能介绍</h2> 
+<p>apmd 复杂 BIOS 高级电源管理（APM）相关的记录、警告与管理工作。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-p&lt;百分比变化量&gt;或–percentage&lt;百分比变化量&gt;</td> 
+   <td align="left">当电量变化的幅度超过设置的百分比变化量是，即记录事件。百分比变化量的默认值为5，若设置值超过100，则关闭此功能。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-q</td> 
+   <td align="left">取消 -w 参数的功能</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-u 或 –utc</td> 
+   <td align="left">将 BIOS 时钟设为 UTC（GMT，格林威治标准时间）</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v 或 –verbose</td> 
+   <td align="left">记录所有的 APM 事件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">V 或 –version</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-w &lt;百分比值&gt; 或 –warn&lt;百分比值&gt;</td> 
+   <td align="left">当电池不在充电的状态时，且电池电量低于设置的百分比值，则在 syslog(2) 的 ALERT 层记录警告信息。百分比的默认值为 10，若设置为0，则关闭此功能。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-W 或 -wall</td> 
+   <td align="left">发出警告信息给所有登陆者</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>当电池的电量低于 20% 时，警告所有用户：</p> 
+<pre><code class="language-bash"># apmd -w 20 -W
+</code></pre> 
+<p>取消电量低于某个半分比就发出警告的功能：</p> 
+<pre><code class="language-bash"># apmd -q
+</code></pre> 
+<p>的那个电量变化幅度超过 10% 时，记录事件：</p> 
+<pre><code class="language-bash"># apmd -p 10
+</code></pre>

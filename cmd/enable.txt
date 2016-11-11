@@ -1,0 +1,39 @@
+<h2>语法</h2> 
+<p>enable [-a]</p> 
+<p>或</p> 
+<p>enable [-n] [内建命令…]</p> 
+<h2>功能介绍</h2> 
+<p>若要执行文件名与shell命令内建命令相同，可用enable -n来关闭shell内建命令。若不加 -n参数，enable可重新启动关闭的命令。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">a</td> 
+   <td align="left">显示shell所有关闭与启动的命令</td> 
+  </tr> 
+  <tr> 
+   <td align="left">n</td> 
+   <td align="left">关闭指定的shell内建命令，若使用此参数而不指定内建命令，则可列出shell当前关闭的命令</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示当前shell所有内建命令的状态：</p> 
+<pre><code class="language-bash"># enable -a
+enable .
+enable :
+enable [
+enable alias
+enable bg
+enable bind
+enable break
+enable builtin
+enable caller
+...
+</code></pre>

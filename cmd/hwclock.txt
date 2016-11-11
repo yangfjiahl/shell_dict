@@ -1,0 +1,55 @@
+<h2>语法</h2> 
+<p>hwclock [–adjust] [–debug] [–directisa] [–hctosys] [–set –date=&lt;日期与时间&gt;] [–show] [–systohc] [–test] [–utc] [–version]</p> 
+<h2>功能介绍</h2> 
+<p>在 Linux 中有硬件时钟（RTC）与系统时钟（System Clock）两种时钟。硬件时钟是指主板上的时钟设备，也就是通过可在 BIOS 和面设置的时钟。系统时钟则值 kernel 中的时钟。当 Linux 启动时，系统时钟会去读取硬件时钟的设置，之后系统时钟即独立运作。所有 Linux 相关命令与函数都是读取系统时钟的设置。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">–adjust</td> 
+   <td align="left">hwclock 每次更改硬件时钟时，都会记录在 /etc/adjtime 文件中。使用”–adjust”参数，可使 hwclock 根据先前的记录来估算硬件时钟的偏差，并用来矫正硬件时钟。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–debug</td> 
+   <td align="left">显示执行的详细信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–directisa</td> 
+   <td align="left">hwclock 默认从 /dev/rtc 设备来存取硬件时钟。若无法存取时，可用此参数直接以I/O命令来存取硬件时钟</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–hctosys</td> 
+   <td align="left">将系统时钟调整为与当前硬件时钟一直</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–set -date=&lt;日期与实践&gt;</td> 
+   <td align="left">设置硬件时钟。格式为“月/日/公元年 时:分:秒”</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–show</td> 
+   <td align="left">显示硬件时钟的时间与日期</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–systohc</td> 
+   <td align="left">将硬件时钟调整为与当前系统的时钟一直</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–utc</td> 
+   <td align="left">以格林威治标准时间显示</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–versino</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示硬件时钟的时间与日期：</p> 
+<pre><code class="language-bash"># hwclock
+</code></pre>

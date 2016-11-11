@@ -1,0 +1,27 @@
+<h2>语法</h2> 
+<p>chroot [–help] [–version] [目的目录]</p> 
+<h2>功能介绍</h2> 
+<p>把根目录换成指定的目录。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">–help</td> 
+   <td align="left">显示帮助</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–version</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>当系统发生错误无法正常开机启动时，我们可借助救援硬盘或安装盘的救援模式进入 Linux 系统，将有问题的外围设备挂入后，加以修复。例如先把分区编号 /dev/hdal 的系统根目录 (/) 载入成为 /mnt 目录，在例如 chroot 命令把 /mnt 目录切换成 / 目录，便于执行各种系统命令与程序：</p> 
+<pre><code class="language-bash"># chroot /mnt 
+</code></pre>

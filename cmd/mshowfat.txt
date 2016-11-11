@@ -1,0 +1,6 @@
+<h2>语法</h2> 
+<p>mshowfat [文件…]</p> 
+<h2>功能介绍</h2> 
+<p>mshowfat为mtools工具指令，可显示MS-DOS文件在FAT中的记录编号。</p> 
+<h2>参数</h2> 
+<h2>例子</h2>

@@ -1,0 +1,93 @@
+<h2>语法</h2> 
+<p>ulimit [-aHS] [-c 
+ <core 文件上线>
+  ] [-d &lt;文件段大小&gt;] [-f &lt;文件大小&gt;] [-m &lt;内存大小&gt;] [-n &lt;文件数&gt;] [-p &lt;缓存区大小&gt;] [-s &lt;堆栈大小&gt;] [-t 
+  <cpu时间>
+   ] [-u &lt;程序数目&gt;] [-v &lt;虚拟内存大小&gt;]
+  </cpu时间>
+ </core></p> 
+<h2>功能介绍</h2> 
+<p>ulimit 为 shell 内建命令，可用来控制 shell 执行程序的资源。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a</td> 
+   <td align="left">显示当前资源限制的设定</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-c</td> 
+   <td align="left">设置core文件的最大值，单位为区块</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d</td> 
+   <td align="left">程序数据段的最大值，单位为KB</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f</td> 
+   <td align="left">shell所能简历的最大文件，单位为区块</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-H</td> 
+   <td align="left">设定资源的硬性限制，也就是管理员所设下的兼职</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-m</td> 
+   <td align="left">指定可用内存的上线，单位为KB</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n</td> 
+   <td align="left">指定同一时间最多可开启的文件数</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-p</td> 
+   <td align="left">指定管道缓冲区的大小，单位为512字节</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s</td> 
+   <td align="left">自定堆栈的上线，单位为KB</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-S</td> 
+   <td align="left">设定资源的弹性限制。只是由用户在管理员所设的硬性资源限制之下，自行加上的限制</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-t</td> 
+   <td align="left">指定CPu使用时间的上限，单位为秒</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-u</td> 
+   <td align="left">用户最多可启动的程序数目</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v</td> 
+   <td align="left">指定可使用的虚拟内存上限，单位为KB</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示当前资源限制的设定值：</p> 
+<pre><code class="language-bash"># ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 62798
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 65535
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 10240
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 65535
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+</code></pre>

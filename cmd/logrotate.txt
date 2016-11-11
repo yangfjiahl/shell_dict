@@ -1,0 +1,40 @@
+<h2>语法</h2> 
+<p>logrotate [-?dfv] [-s &lt;状态文件&gt;] [–usage] [设置文件]</p> 
+<h2>功能介绍</h2> 
+<p>使用 logrotate 命令可以轻松管理系统所产生的记录文件。它提供自动替换、压缩、删除和邮寄记录文件，每个记录文件都可设置成每日、每周或每月处理，也能在文件太大时立即处理。必须自行编辑、指定设置文件，默认的设置文件存在 /etc 目录下，文件名为 logrotate.conf。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-? 或 –help</td> 
+   <td align="left">显示帮助</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d 或 –debug</td> 
+   <td align="left">详细显示命令执行过程，便于debug或了解程序执行的情形。在debug模式中，没有任何记录文件或状态文件会被修改及改动。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f 或 –force</td> 
+   <td align="left">强行启动记录文件维护操作，即使 logrotate 命令认为没有需要也一样。当刚在设置文件中加入新选项，或是手动删除某些记录文件，却需要记录文件能够继续正确地维护并记录系统情形时，就可以使用这项参数。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s &lt;状态文件&gt; 或 –state=&lt;状态文件&gt;</td> 
+   <td align="left">使用指定的状态文件。如果有不同的用户采用不一样的设置文件，则可搭配这个参数，个别指定状态文件记录变动信息。默认的状态文件位于 /var/lib 目录里，文件名为 logrotate.status</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v 或 –version</td> 
+   <td align="left">版本信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-usage</td> 
+   <td align="left">显示命令基本用法</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

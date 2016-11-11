@@ -1,0 +1,28 @@
+<h2>语法</h2> 
+<p>mke2fs [-cFMqrSvV][-b &lt;区块大小&gt;][-f &lt;不连续区段大小&gt;][-i &lt;字节&gt;][-N 
+ <inode数>
+  ][-l &lt;文件&gt;][-L &lt;标签&gt;][-m &lt;百分比值&gt;][-R=&lt;区块数&gt;][ 设备名称][区块数]
+ </inode数></p> 
+<h2>功能介绍</h2> 
+<p>mke2fs可建立Linux的ext2文件系统。</p> 
+<h2>参数</h2> 
+<p>-b&lt;区块大小&gt; 指定区块大小，单位为字节。</p> 
+<p>-c 检查是否有损坏的区块。</p> 
+<p>-f&lt;不连续区段大小&gt; 指定不连续区段的大小，单位为字节。</p> 
+<p>-F 不管指定的设备为何，强制执行mke2fs。</p> 
+<p>-i&lt;字节&gt; 指定”字节/inode”的比例。</p> 
+<p>-N
+ <inode数>
+   指定要建立的inode数目。
+ </inode数></p> 
+<p>-l&lt;文件&gt; 从指定的文件中，读取文件西中损坏区块的信息。</p> 
+<p>-L&lt;标签&gt; 设置文件系统的标签名称。</p> 
+<p>-m&lt;百分比值&gt; 指定给管理员保留区块的比例，预设为5%。</p> 
+<p>-M 记录最后一次挂入的目录。</p> 
+<p>-q 执行时不显示任何信息。</p> 
+<p>-r 指定要建立的ext2文件系统版本。</p> 
+<p>-R=&lt;区块数&gt; 设置磁盘阵列参数。</p> 
+<p>-S 仅写入superblock与group descriptors，而不更改inode able inode bitmap以及block bitmap。</p> 
+<p>-v 执行时显示详细信息。</p> 
+<p>-V 显示版本信息。</p> 
+<h2>例子</h2>

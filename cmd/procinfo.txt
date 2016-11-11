@@ -1,0 +1,68 @@
+<h2>语法</h2> 
+<p>procinfo [-abdDfhimsSv] [-F &lt;输出文件&gt;] [-n &lt;间隔秒数&gt;]</p> 
+<h2>功能介绍</h2> 
+<p>procinfo 命令从 /proc 目录里读取系统相关数据，并将数据整理后输出到标准输出设备。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a</td> 
+   <td align="left">显示所有信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-b</td> 
+   <td align="left">显示磁盘设备的块数目，而非存取数目</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d</td> 
+   <td align="left">显示系统信息每秒间的变化差额，而非总和的数值</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-D</td> 
+   <td align="left">此参数的效果和指定“-d”类型，但内存和交换文件（虚拟内存）的信息为总和数值</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f</td> 
+   <td align="left">进入全画面的互动式操作界面</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-F&lt;输出文件&gt;</td> 
+   <td align="left">把信息状态输出到文件。输出的文件必须是一个已经存在的文件，也可以将数据导向外围设备代号，则把结果显示在该终端的画面上。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-h</td> 
+   <td align="left">显示帮助</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-i</td> 
+   <td align="left">显示完整的 IRQ 列表</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-m</td> 
+   <td align="left">显示系统模块和外围设备等相关信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n &lt;间隔秒数&gt;</td> 
+   <td align="left"></td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s</td> 
+   <td align="left">显示系统的内存、磁盘空间、IRQ和DMA等信息，此为默认值</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-S</td> 
+   <td align="left">搭配单数“-d”或“-D”使用，每秒都更新信息，不论是否有参数“-n”</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v</td> 
+   <td align="left">显示版本</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

@@ -1,0 +1,17 @@
+<h2>语法</h2> 
+<p>userconf [–addgroup &lt;群组&gt;][–adduser &lt;用户ID&gt;&lt;群组&gt;&lt;用户名称&gt;
+ <shell>
+  ][–delgroup &lt;群组&gt;][–deluser &lt;用户ID&gt;][–help]
+ </shell></p> 
+<h2>功能介绍</h2> 
+<p>userconf实际上为linuxconf的符号连接，提供图形界面的操作方式，供管理员建立与管理各类帐号。若不加任何参数，即进入图形界面。</p> 
+<h2>参数</h2> 
+<p>–addgroup&lt;群组&gt; 　新增群组。</p> 
+<p>–adduser&lt;用户ID&gt;&lt;群组&gt;&lt;用户名称&gt;
+ <shell>
+   　新增用户帐号。
+ </shell></p> 
+<p>–delgroup&lt;群组&gt; 　删除群组。</p> 
+<p>–deluser&lt;用户ID&gt; 　删除用户帐号。</p> 
+<p>–help 　显示帮助。</p> 
+<h2>例子</h2>

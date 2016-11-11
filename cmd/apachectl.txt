@@ -1,0 +1,14 @@
+<h2>语法</h2> 
+<p>apachectl [configtest][fullstatus][graceful][help][restart][start][status][stop]</p> 
+<h2>功能介绍</h2> 
+<p>apachectl是slackware内附Apache HTTP服务器的script文件，可供管理员控制服务器，但在其他Linux的Apache HTTP服务器不一定有这个文件。</p> 
+<h2>参数</h2> 
+<p>configtest 检查设置文件中的语法是否正确。</p> 
+<p>fullstatus 显示服务器完整的状态信息。</p> 
+<p>graceful 重新启动Apache服务器，但不会中断原有的连接。</p> 
+<p>help 显示帮助信息。</p> 
+<p>restart 重新启动Apache服务器。</p> 
+<p>start 启动Apache服务器。</p> 
+<p>status 显示服务器摘要的状态信息。</p> 
+<p>stop 停止Apache服务器。</p> 
+<h2>例子</h2>

@@ -1,0 +1,24 @@
+<h2>语法</h2> 
+<p>remod [-as] [模块名称]</p> 
+<h2>功能介绍</h2> 
+<p>执行rmmod命令可删除不要的模块。Linux操作系统的内核具有模块化的特征，因此在编译时，无需把所有功能都放入内核。可以在需要的时候再载入。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a</td> 
+   <td align="left">删除所有当前不需要的模块</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s</td> 
+   <td align="left">把信息输出到syslog常驻服务程序，而非终端界面。</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

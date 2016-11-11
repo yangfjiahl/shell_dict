@@ -1,0 +1,10 @@
+<h2>语法</h2> 
+<p>groupdel [组名称]</p> 
+<h2>功能介绍</h2> 
+<p>需要从系统上删除组时，可用groupdel命令来完成这项工作。假如该组中仍包括某些用户，则必须先删除这些用户后，才能删除组。</p> 
+<h2>参数</h2> 
+<p>无</p> 
+<h2>例子</h2> 
+<p>删除 tom 组：</p> 
+<pre><code class="language-bash"># groupdel tom
+</code></pre>

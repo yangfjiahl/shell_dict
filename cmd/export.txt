@@ -1,0 +1,35 @@
+<h2>语法</h2> 
+<p>export [-fn] [变量名称[=变量设置值]]</p> 
+<p>或</p> 
+<p>export -p</p> 
+<h2>功能介绍</h2> 
+<p>在 shell 中执行程序时，shell 会提供一组环境变量。export可新增、修改或删除环境变量，，共后续执行的程序使用，export的效力仅基于该次登录作业。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-f</td> 
+   <td align="left">表示 [变量名称]中为函数名称</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n</td> 
+   <td align="left">删除指定的变量。变量实际上并未删除，只是不会输出到后续命令的执行环境中</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-p</td> 
+   <td align="left">列出所有 shell 赋予程序的环境变量</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>设置 HI 变量</p> 
+<pre><code class="language-bash"># export HI=100
+# echo $HI
+100
+</code></pre>

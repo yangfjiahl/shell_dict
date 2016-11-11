@@ -1,0 +1,23 @@
+<h2>语法</h2> 
+<p>df [选项]… [FILE]…</p> 
+<h2>功能介绍</h2> 
+<p>显示档案系统的状况，或是看所有档案系统的状况(预设值)</p> 
+<h2>参数</h2> 
+<p>-a, –all 包含所有的具有 0 Blocks 的档案系统</p> 
+<p>–block-size={SIZE} 使用 {SIZE} 大小的 Blocks</p> 
+<p>-h, –human-readable 使用人类可读的格式(预设值是不加这个选项的…)</p> 
+<p>-H, –si 很像 -h, 但是用 1000 为单位而不是用 1024</p> 
+<p>-i, –inodes 列出 inode 资讯，不列出已使用 block</p> 
+<p>-k, –kilobytes 就像是 –block-size=1024</p> 
+<p>-l, –local 限制列出的档案结构</p> 
+<p>-m, –megabytes 就像 –block-size=1048576</p> 
+<p>–no-sync 取得资讯前不 sync (预设值)</p> 
+<p>-P, –portability 使用 POSIX 输出格式</p> 
+<p>–sync 在取得资讯前 sync</p> 
+<p>-t, –type=TYPE 限制列出档案系统的 TYPE</p> 
+<p>-T, –print-type 显示档案系统的形式</p> 
+<p>-x, –exclude-type=TYPE 限制列出档案系统不要显示 TYPE</p> 
+<p>-v (忽略)</p> 
+<p>–help 显示这个帮手并且离开</p> 
+<p>–version 输出版本资讯并且离开</p> 
+<h2>例子</h2>

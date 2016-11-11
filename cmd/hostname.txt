@@ -1,0 +1,63 @@
+<h2>语法</h2> 
+<p>hostname [-adfhinsvVy] [-F &lt;文件名称&gt;]</p> 
+<h2>功能介绍</h2> 
+<p>当开机时，系统会读取 /etc/host 设置文件，由此设置主机的IP及对应的全名与别名。而hostname命令可用来查询当前主机的主机名称、全名、前置名称、域名、别名FQDN、IP等。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a 或 –alias</td> 
+   <td align="left">查询主机名称的别名</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d 或 –domain</td> 
+   <td align="left">查询主机的域名</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-F 或 –file</td> 
+   <td align="left">将主机名称设成文件中指定的名称</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f 、–fqdn 或 –long</td> 
+   <td align="left">查询主机的全名</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-h 或 –help</td> 
+   <td align="left">显示帮助信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-i 或 –ip-address</td> 
+   <td align="left">查询主机的IP地址</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n 或 –node</td> 
+   <td align="left">查询DECnet网络的节点名称</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s 或 –short</td> 
+   <td align="left">查询主机的前置名称</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v 或 –verbose</td> 
+   <td align="left">显示命令执行过程</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-V 或 –version</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-y、–yp 或 –nis</td> 
+   <td align="left">查询 NIS 域名</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>查询主机别名：</p> 
+<pre><code class="language-bash"># hostname -a
+</code></pre>

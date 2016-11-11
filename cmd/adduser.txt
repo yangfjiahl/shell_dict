@@ -1,0 +1,46 @@
+<h2>语法</h2> 
+<p>adduser [-mMnr] [-c &lt;备注&gt;] [-d &lt;登录目录&gt;] [-e &lt;有效期限&gt;] [-f &lt;缓冲天数&gt;] [-g &lt;组&gt;] [-G &lt;组&gt;] [-s 
+ <shell>
+  ] [-u 
+  <uid>
+   ] [用户账号]
+  </uid>
+ </shell></p> 
+<p>或</p> 
+<p>adduser -D [-b &lt;用户目录&gt;] [-e &lt;有效期限&gt;] [-f &lt;缓冲天数&gt;] [-g &lt;组&gt;] [-G &lt;组&gt;] [-s 
+ <shell>
+  ]
+ </shell></p> 
+<h2>功能介绍</h2> 
+<p>adduser 可用来建立用户账号。账号建好之后，在用 passwd 设置账号密码。可用 userdel 删除账号。此命令在 Linux 中，其实是 adduser 的符号链接。使用 adduser 命令 所建立的账号，实际上存储在 /etc/passwd 文本文件中。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-c</td> 
+   <td align="left">加上备注文件。备注文字会存储在 passwd 的备注参数中</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d</td> 
+   <td align="left">指定用户登录时的起始目录</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-D</td> 
+   <td align="left">变更默认值。默认值的选线说明如果：</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<p>-b 在指定的&lt;用户目录&gt;下，建立所有用户&lt;登录目录&gt;。默认值为 /home -e 指定默认账号的有效期限 -f 指定默认在密码过期多少天后即关闭该账号 -g 指定用户默认所属的组 -G 指定用户所诉的附加组 -s 指定使用默认的shell | | -e | 指定账号的有效期限。有效期限的格式为 月份/日期/公元年后两位 | | -f | 指定在密码过期后多少天即关闭该账号 | | -g | 指定用户所属的组 | | -G | 指定用户所属的附加组 | | -m | 自动建立用户的登录目录 | | -M | 不要自动建立用户的登录目录 | | -n | 不建立以用户名为名的组 | | -r | 建立系统账号 | | -s | 指定用户登陆后所使用的shell | | -u | 指定用户ID |</p> 
+<h2>例子</h2> 
+<p>建立名为tom的用户账号：</p> 
+<pre><code class="language-bash"># adduser tom
+</code></pre> 
+<p>建立名为tom的用户账号，并指定账号的有效期为2014年1月2日：</p> 
+<pre><code class="language-bash"># adduser -e 1/2/14 tom
+</code></pre>

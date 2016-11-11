@@ -1,0 +1,41 @@
+<h2>语法</h2> 
+<p>chsh [-luv] [-s 
+ <shell 名称>
+  ] [用户名称]
+ </shell></p> 
+<h2>功能介绍</h2> 
+<p>每位用户在登录系统时，都会拥有默认的 shell 环境，这个命令可更改其默认值。若不指定任何参数与用户名称，则 chsh 会以问答的方式进行设置。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-s 或 –shell</td> 
+   <td align="left">更改系统默认的 shell 环境</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-l 或 –list -shells</td> 
+   <td align="left">列出当前系统可用的 shell 列表</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-u 或 –help</td> 
+   <td align="left">显示帮助信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v 或 –version</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>列出当前可用的 shell：</p> 
+<pre><code class="language-bash"># chsh -l
+/bin/sh
+/bin/bash
+...
+</code></pre>

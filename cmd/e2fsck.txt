@@ -1,0 +1,23 @@
+<h2>语法</h2> 
+<p>e2fsck [-pacnydfvFV] [-b superblock] [-B blocksize] [-l|-L bad_blocks_file] [-C fd] device</p> 
+<h2>功能介绍</h2> 
+<p>检查使用 Linux ext2 档案系统的 partition 是否正常工作。</p> 
+<p>大部份使用 e2fsck 来检查硬盘 partition 的情况时，通常都是情形特殊，因此最好先将该 partition umount，然后再执行 e2fsck 来做检查，若是要非要检查 / 时，则请进入 singal user mode 再执行。</p> 
+<h2>参数</h2> 
+<p>device ： 预备检查的硬盘 partition，例如：/dev/sda1</p> 
+<p>-a : 对 partition 做检查，若有问题便自动修复，等同 -p 的功能</p> 
+<p>-b : 设定存放 superblock 的位置</p> 
+<p>-B : 设定单位 block 的大小</p> 
+<p>-c : 检查该partition 是否有坏轨</p> 
+<p>-C file : 将检查的结果存到 file 中以便查看</p> 
+<p>-d : 列印 e2fsck 的 debug 结果</p> 
+<p>-f : 强制检查</p> 
+<p>-F : 在开始检查前，将device 的 buffer cache 清空，避免有错误发生</p> 
+<p>-l bad_blocks_file : 将有坏轨的block资料加到 bad_blocks_file 里面</p> 
+<p>-L bad_blocks_file : 设定坏轨的block资料存到 bad_blocks_file 里面，若无该档则自动产生</p> 
+<p>-n : 将档案系统以[唯读]方式开启</p> 
+<p>-p : 对 partition 做检查，若有问题便自动修复</p> 
+<p>-v : 详细显示模式</p> 
+<p>-V : 显示出目前 e2fsck 的版本</p> 
+<p>-y : 预先设定所有检查时的问题均回答[是]</p> 
+<h2>例子</h2>

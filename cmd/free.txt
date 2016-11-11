@@ -1,0 +1,51 @@
+<h2>语法</h2> 
+<p>free [-bkmotV] [-s &lt;间隔描述&gt;]</p> 
+<h2>功能介绍</h2> 
+<p>free 命令会显示内存的使用情形，包括物理（Physical）内存、虚拟的交换文件内存、更像内存区段，以及系统核心使用的缓存区等。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-b</td> 
+   <td align="left">以Byte为单位显示内存使用情形</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-k</td> 
+   <td align="left">以KB为单位显示内存使用情形。这项参数为默认值，其效果相当于仅执行free命令而不加任何参数</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-m</td> 
+   <td align="left">以 Mb 为单位显示内存使用情形</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-o</td> 
+   <td align="left">不显示缓冲区调节行</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s</td> 
+   <td align="left">持续观察内存使用状态。间隔描述设为3，则每隔3秒就会查看内存状态一次</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-t</td> 
+   <td align="left">显示内存总和行</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-V</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示内存情况：</p> 
+<pre><code class="language-bash"># free
+             total       used       free     shared    buffers     cached
+Mem:       8058636    5040832    3017804          0     156728    4087964
+-/+ buffers/cache:     796140    7262496
+Swap:      8190968       7784    8183184
+</code></pre>

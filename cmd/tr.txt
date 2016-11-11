@@ -1,0 +1,57 @@
+<h2>语法</h2> 
+<p>tr(选项)(参数)</p> 
+<h2>功能介绍</h2> 
+<p>tr命令可以对来自标准输入的字符进行替换、压缩和删除。它可以将一组字符变成另一组字符，经常用来编写优美的单行命令，作用很强大。</p> 
+<h2>参数</h2> 
+<p>-c或——complerment：取代所有不属于第一字符集的字符；</p> 
+<p>-d或——delete：删除所有属于第一字符集的字符；</p> 
+<p>-s或–squeeze-repeats：把连续重复的字符以单独一个字符表示；</p> 
+<p>-t或–truncate-set1：先删除第一字符集较第二字符集多出的字符。</p> 
+<p>字符集1：指定要转换或删除的原字符集。当执行转换操作时，必须使用参数“字符集2”指定转换的目标字符集。但执行删除操作时，不需要参数“字符集2”；</p> 
+<p>字符集2：指定要转换成的目标字符集。</p> 
+<h2>例子</h2> 
+<p>将输入字符由大写转换为小写：</p> 
+<pre><code class="language-bash">echo "HELLO WORLD" | tr 'A-Z' 'a-z'
+hello world
+</code></pre> 
+<p>‘A-Z’ 和 ‘a-z’都是集合，集合是可以自己制定的，例如：’ABD-}‘、’bB.,‘、’a-de-h’、’a-c0-9’都属于集合，集合里可以使用’\n’、’\t’，可以可以使用其他ASCII字符。</p> 
+<p>使用tr删除字符：</p> 
+<pre><code class="language-bash">echo "hello 123 world 456" | tr -d '0-9'
+hello  world 
+</code></pre> 
+<p>将制表符转换为空格：</p> 
+<pre><code class="language-bash">cat text | tr '\t' ' '
+</code></pre> 
+<p>字符集补集，从输入文本中将不在补集中的所有字符删除：</p> 
+<pre><code class="language-bash">echo aa.,a 1 b#$bb 2 c*/cc 3 ddd 4 | tr -d -c '0-9 \n'
+ 1  2  3  4
+</code></pre> 
+<p>此例中，补集中包含了数字0~9、空格和换行符\n，所以没有被删除，其他字符全部被删除了。</p> 
+<p>用tr压缩字符，可以压缩输入中重复的字符：</p> 
+<pre><code class="language-bash">echo "thissss is      a text linnnnnnne." | tr -s ' sn'
+this is a text line.
+</code></pre> 
+<p>巧妙使用tr做数字相加操作：</p> 
+<pre><code class="language-bash">echo 1 2 3 4 5 6 7 8 9 | xargs -n1 | echo $[ $(tr '\n' '+') 0 ]
+</code></pre> 
+<p>删除Windows文件“造成”的’^M’字符：</p> 
+<pre><code class="language-bash">cat file | tr -s "\r" "\n" &gt; new_file
+或
+cat file | tr -d "\r" &gt; new_file
+</code></pre> 
+<p>tr可以使用的字符类：</p> 
+<pre><code class="language-bash">[:alnum:]：字母和数字
+[:alpha:]：字母
+[:cntrl:]：控制（非打印）字符
+[:digit:]：数字
+[:graph:]：图形字符
+[:lower:]：小写字母
+[:print:]：可打印字符
+[:punct:]：标点符号
+[:space:]：空白字符
+[:upper:]：大写字母
+[:xdigit:]：十六进制字符
+</code></pre> 
+<p>使用方式：</p> 
+<pre><code class="language-bash">tr '[:lower:]' '[:upper:]'
+</code></pre>

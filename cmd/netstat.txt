@@ -1,0 +1,30 @@
+<h2>语法</h2> 
+<p>netstat [-acCeFghilMnNoprstuvVwx][-A&lt;网络类型&gt;][–ip]</p> 
+<h2>功能介绍</h2> 
+<p>利用netstat指令可让你得知整个Linux系统的网络情况。</p> 
+<h2>参数</h2> 
+<p>-a或–all 显示所有连线中的Socket。</p> 
+<p>-A&lt;网络类型&gt;或–&lt;网络类型&gt; 列出该网络类型连线中的相关地址。</p> 
+<p>-c或–continuous 持续列出网络状态。</p> 
+<p>-C或–cache 显示路由器配置的快取信息。</p> 
+<p>-e或–extend 显示网络其他相关信息。</p> 
+<p>-F或–fib 显示FIB。</p> 
+<p>-g或–groups 显示多重广播功能群组组员名单。</p> 
+<p>-h或–help 在线帮助。</p> 
+<p>-i或–interfaces 显示网络界面信息表单。</p> 
+<p>-l或–listening 显示监控中的服务器的Socket。</p> 
+<p>-M或–masquerade 显示伪装的网络连线。</p> 
+<p>-n或–numeric 直接使用IP地址，而不通过域名服务器。</p> 
+<p>-N或–netlink或–symbolic 显示网络硬件外围设备的符号连接名称。</p> 
+<p>-o或–timers 显示计时器。</p> 
+<p>-p或–programs 显示正在使用Socket的程序识别码和程序名称。</p> 
+<p>-r或–route 显示Routing Table。</p> 
+<p>-s或–statistice 显示网络工作信息统计表。</p> 
+<p>-t或–tcp 显示TCP传输协议的连线状况。</p> 
+<p>-u或–udp 显示UDP传输协议的连线状况。</p> 
+<p>-v或–verbose 显示指令执行过程。</p> 
+<p>-V或–version 显示版本信息。</p> 
+<p>-w或–raw 显示RAW传输协议的连线状况。</p> 
+<p>-x或–unix 此参数的效果和指定”-A unix”参数相同。</p> 
+<p>–ip或–inet 此参数的效果和指定”-A inet”参数相同。</p> 
+<h2>例子</h2>

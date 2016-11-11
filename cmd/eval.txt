@@ -1,0 +1,15 @@
+<h2>语法</h2> 
+<p>eval [参数…]</p> 
+<h2>功能介绍</h2> 
+<p>eval 可读取一连串的参数，然后再根据参数本身的特征来执行。通常是用来处理 shell script 中的变量。</p> 
+<h2>参数</h2> 
+<p>参数不限数目，彼此之间以分好隔开。</p> 
+<p>参数可以是命令或变量。</p> 
+<h2>例子</h2> 
+<pre><code class="language-bash"># var2=\$var1
+# var1=tyrell
+# eval echo $var2
+tyrell
+# echo $var2
+$var1
+</code></pre>

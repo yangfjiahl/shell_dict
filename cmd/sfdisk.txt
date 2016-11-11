@@ -1,0 +1,15 @@
+<h2>语法</h2> 
+<p>sfdisk [-?Tvx][-d &lt;硬盘&gt;][-g &lt;硬盘&gt;][-l &lt;硬盘&gt;][-s &lt;分区&gt;][-V &lt;硬盘&gt;]</p> 
+<h2>功能介绍</h2> 
+<p>sfdisk为硬盘分区工具程序，可显示分区的设置信息，并检查分区是否正常。</p> 
+<h2>参数</h2> 
+<p>-?或–help 显示帮助。</p> 
+<p>-d&lt;硬盘&gt; 显示硬盘分区的设置。</p> 
+<p>-g&lt;硬盘&gt;或–show-geometry&lt;硬盘&gt; 显示硬盘的CHS参数。</p> 
+<p>-l&lt;硬盘&gt; 显示后硬盘分区的相关设置。</p> 
+<p>-s&lt;分区&gt; 显示分区的大小，单位为区块。</p> 
+<p>-T或–list-types 显示所有sfdisk能辨识的文件系统ID。</p> 
+<p>-v或–version 显示版本信息。</p> 
+<p>-V&lt;硬盘&gt;或–verify&lt;硬盘&gt; 检查硬盘分区是否正常。</p> 
+<p>-x或–show-extend 显示扩展分区中的逻辑分区。</p> 
+<h2>例子</h2>

@@ -1,0 +1,29 @@
+<h2>语法</h2> 
+<p>dnsconf [–deldomain&lt;域&gt;][–delsecondary&lt;域&gt;][–newdomain&lt;域&gt;][–set&lt;主机&gt;
+ <ip>
+  ][–setcname
+  <cname>
+   &lt;主机&gt;][–setmx&lt;域&gt;&lt;主机&gt;][–setns&lt;域&gt;&lt;主机&gt;][–unset&lt;主机&gt;]
+  </cname>
+ </ip></p> 
+<h2>功能介绍</h2> 
+<p>dnsconf实际上为linuxconf的符号连接，提供图形截面的操作方式，供管理员管理DNS服务器。</p> 
+<h2>参数</h2> 
+<p>–deldomain&lt;域&gt; 删除域。</p> 
+<p>–delsecondary&lt;域&gt; 删除次级域。</p> 
+<p>–newdomain&lt;域&gt; 新增域。</p> 
+<p>–set&lt;主机&gt;
+ <ip>
+   新增主机记录。
+ </ip></p> 
+<p>–setcname
+ <cname>
+  &lt;主机&gt; 设置
+  <cname>
+   。
+  </cname>
+ </cname></p> 
+<p>–setmx&lt;域&gt;&lt;主机&gt; 指定域的邮件主机。</p> 
+<p>–setns&lt;域&gt;&lt;主机&gt; 指定域的DNS服务器。</p> 
+<p>–unset&lt;主机&gt; 删除DNS中某台主机的记录。</p> 
+<h2>例子</h2>

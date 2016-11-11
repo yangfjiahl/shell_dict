@@ -1,0 +1,46 @@
+<h2>语法</h2> 
+<p>crontab [-u &lt;用户名称&gt;] [设置文件] 或</p> 
+<p>crontab [-u&lt;用户名称&gt;] [-elr]</p> 
+<h2>功能介绍</h2> 
+<p>cron 是一个常驻服务，它提供计时器的功能，让用户在特定的时间得以执行默认的命令或程序。只要用户会编辑计时器的设置文件，就可以使用计时器的功能。用户可以用 crontab 命令来设置所执行的工作。其设置文件的格式如下：</p> 
+<pre><code class="language-bash">minute hour day month dayofweek command
+</code></pre> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-e</td> 
+   <td align="left">编辑该用户的计时器设置</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-l</td> 
+   <td align="left">列出该用户的计时器设置</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-r</td> 
+   <td align="left">删除该用户的计时器设置</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-u</td> 
+   <td align="left">指定要设置计时器的用户名称</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>设置计时器的设置文件，文件名为cronset（可自定义），使得每天凌晨4点自动执行updatedb 命令：</p> 
+<pre><code class="language-bash"># cat cronset
+0 4 * * * updatedb
+# crontab cronset
+</code></pre> 
+<p>列出当前计时器的设置：</p> 
+<pre><code class="language-bash"># crontab -l
+</code></pre> 
+<p>编辑用户计时器的设置文件，会自动进入vi编辑模式：</p> 
+<pre><code class="language-bash"># crontab -e
+</code></pre>

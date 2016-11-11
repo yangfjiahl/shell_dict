@@ -1,0 +1,11 @@
+<h2>语法</h2> 
+<p>ed [-][-Gs][-p&lt;字符串&gt;][–help][–version][文件]</p> 
+<h2>功能介绍</h2> 
+<p>ed是Linux中功能最简单的文本编辑程序，一次仅能编辑一行而非全屏幕方式的操作。</p> 
+<h2>参数</h2> 
+<p>-G或–traditional 提供回兼容的功能。</p> 
+<p>-p&lt;字符串&gt; 指定ed在command mode的提示字符。</p> 
+<p>-s,-,–quiet或–silent 不执行开启文件时的检查功能。</p> 
+<p>–help 显示帮助。</p> 
+<p>–version 显示版本信息。</p> 
+<h2>例子</h2>

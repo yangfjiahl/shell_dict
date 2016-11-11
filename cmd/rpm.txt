@@ -1,0 +1,328 @@
+<h2>语法</h2> 
+<p>rpm …</p> 
+<h2>功能介绍</h2> 
+<p>rpm 原本是 Red Hat Linux 发行版专门管理 Linux 各项包的程序，由于它遵循 GPL 规则，且功能欠打方便，因而广受欢迎，逐渐被其他发行版采用。RPM 包管理方式的出现，让 Linux 的软件易于安装，升级，间接提升了 Linux 的适用度。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a</td> 
+   <td align="left">查询所有的包</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-c</td> 
+   <td align="left">列出配置设置文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d</td> 
+   <td align="left">列出文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-e&lt;包文件&gt; 或–erase&lt;包文件&gt;</td> 
+   <td align="left">删除指定的包</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f&lt;文件&gt;+</td> 
+   <td align="left">查询拥有指定文件的包</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-h 或 –hash</td> 
+   <td align="left">包安装时列出标记</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-i</td> 
+   <td align="left">显示包的相关i型奶昔</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-i&lt;包文件&gt; 或 –install&lt;包文件&gt;</td> 
+   <td align="left">安装指定的包文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-l</td> 
+   <td align="left">显示包的文件列表</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-p&lt;包文件+&gt;</td> 
+   <td align="left">玄讯指定搞定RPM包文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-q</td> 
+   <td align="left">使用查询模式</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-R</td> 
+   <td align="left">显示包的相关性信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s</td> 
+   <td align="left">显示文件状态</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-U&lt;包文件&gt; 或 –upgrade&lt;包文件&gt;</td> 
+   <td align="left">升级指定的包文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v</td> 
+   <td align="left">显示命令执行过程</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-V</td> 
+   <td align="left">检查文件正确性</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-vv</td> 
+   <td align="left">详细显示命令执行过程，以便于排错</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–addsign&lt;包文件&gt;+</td> 
+   <td align="left">在指定的包里加上新的签名认证</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–allfiles</td> 
+   <td align="left">安装所有文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–allmatches</td> 
+   <td align="left">移除符合指定的包所包含的文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–badreloc</td> 
+   <td align="left">发生错误时，重新配置文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–changelog</td> 
+   <td align="left">显示包的异动记录</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–checksig&lt;包文件&gt;+</td> 
+   <td align="left">检验该包的签名认证</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–clean</td> 
+   <td align="left">完成包的安装后，移除包装过程中所建立的目录</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–dbpath&lt;数据库目录&gt;</td> 
+   <td align="left">设定于存放RPM数据库的目录</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–dump</td> 
+   <td align="left">显示每个文件的验证信息。此参数配合“-l”参数使用</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–excludedocs</td> 
+   <td align="left">安装包时，不要安装文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–excludepaath&lt;排除目录&gt;</td> 
+   <td align="left">忽略在指定目录里的所有文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–force</td> 
+   <td align="left">强行替换包或文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–ftpproxy&lt;主机名称或IP地址&gt;</td> 
+   <td align="left">指定FTP代理服务器</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–ftpport&lt;端口&gt;</td> 
+   <td align="left">设定FTP服务器或代理服务器使用的通讯端口</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–help</td> 
+   <td align="left">显示帮助</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–httproxy&lt;主机名称或IP地址&gt;</td> 
+   <td align="left">设定HTTP代理服务器</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–httpport&lt;端口&gt;</td> 
+   <td align="left">设定HTTP服务器或代理服务器端口</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–ignorearch</td> 
+   <td align="left">不验证包文件的结构正确性</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–ignoreos</td> 
+   <td align="left">不验证包文件的操作系统</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–ignoresize</td> 
+   <td align="left">安装前不验证磁盘空间是否足够</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–includedocs</td> 
+   <td align="left">安装包时，一并安装文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–initdb</td> 
+   <td align="left">确认有正确的数据库可以使用</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–justdb</td> 
+   <td align="left">更新数据库，但不变动任何文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–nodeps</td> 
+   <td align="left">不验证包文件的相互关联性</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–nofiles</td> 
+   <td align="left">不验证文件的属性</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–nomd5</td> 
+   <td align="left">不使用MD5编码验证人间的大小和正确性</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–noorder</td> 
+   <td align="left">不重新编排包的安装顺序，以便满足其彼此间的关联性</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–noscripts</td> 
+   <td align="left">不执行任何安装script文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–notriggers</td> 
+   <td align="left">不执行该包包装内的任何script文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–oldpackage</td> 
+   <td align="left">升级成旧版本的包</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–percent</td> 
+   <td align="left">安装包时显示完成进度的百分比</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–pipe&lt;执行命令&gt;</td> 
+   <td align="left">建立管道，把输出结果转为该执行命令的输入数据</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–prefix&lt;目的目录&gt;</td> 
+   <td align="left">若重新配置文件，就把文件放在指定的目录下</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–provides</td> 
+   <td align="left">查询该包所提供的相容度</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–queryformat&lt;文件头格式&gt;</td> 
+   <td align="left">设定文件头的表示方法。文件头格式分为“name”、“version”和“description”3种，本参数需配合“-i”参数使用</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–querytags</td> 
+   <td align="left">列出可用于文件头格式的标签</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–rcfile&lt;设定文件&gt;</td> 
+   <td align="left">使用指定的设定文件。默认的设定文件位于 /etc 或用户专属目录里，文件名称为 rpmrc 或 .rpmrc，可用此参数改变它</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–rebuilddb</td> 
+   <td align="left">以现有的数据库为主，重建一份数据库</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–relocate&lt;远目录&gt;=&lt;新目录&gt;</td> 
+   <td align="left">把本来会放到原目录下的文件改放至新目录</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–replacefiles</td> 
+   <td align="left">强行替换文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–replacepkgs</td> 
+   <td align="left">强行替换包</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–requires</td> 
+   <td align="left">查询该包所需要的相容度</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–resign&lt;包文件&gt;+</td> 
+   <td align="left">移除现有的认证，重新产生签名认证</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–rmsource</td> 
+   <td align="left">完成包的安装后，移除原始码</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–rmsource&lt;文件&gt;</td> 
+   <td align="left">移除原始码和指定的文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–root&lt;根目录&gt;</td> 
+   <td align="left">设定欲当作根目录的目录</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–script</td> 
+   <td align="left">列出安装包的Script的变数</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–setperms</td> 
+   <td align="left">设定文件的权限</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–setugids</td> 
+   <td align="left">设定文件的拥有者和所属组</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–short–circuit</td> 
+   <td align="left">直接略过指定完成阶段的步骤</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–test</td> 
+   <td align="left">仅作测试，并不真正安装包</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–triggeredby&lt;包文件&gt;</td> 
+   <td align="left">查询该包的包装者</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–triggers</td> 
+   <td align="left">展示包文件内的包装Script</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–verify</td> 
+   <td align="left">此参数的效果和指定“-q”参数相同</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–version</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–whatprovides&lt;功能特性&gt;</td> 
+   <td align="left">查询该包对指定的功能特性所提供的相容度</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–whatrequires&lt;功能特性&gt;</td> 
+   <td align="left">查询该包对指定的功能特性所需要的相容度</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>将 XX.rpm 包安装到系统上：</p> 
+<pre><code class="language-bash"># rpm -i XXX.rpm
+</code></pre> 
+<p>将 XX.rpm 包安装到系统上，执行时显示命令执行过程：</p> 
+<pre><code class="language-bash"># rpm -iv XXX.rpm
+...
+...
+</code></pre> 
+<p>将 XX.rpm 包安装到系统上，执行时显示详细的命令执行过程：</p> 
+<pre><code class="language-bash"># rpm -ivv XXX.rpm
+...
+...
+</code></pre> 
+<p>从系统移除 XXX 包</p> 
+<pre><code class="language-bash"># rpm -e XXX
+</code></pre>

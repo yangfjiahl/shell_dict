@@ -1,0 +1,48 @@
+<h2>语法</h2> 
+<p>lbs_release [-acdhirsv]</p> 
+<h2>功能介绍</h2> 
+<p>现今主要的Linux发行版都已支持LSB。通过此命令可查询当前使用Linux发行版的相关信息，如版本编号、发型厂商、代号、简要介绍等。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a 或 –all</td> 
+   <td align="left">显示所有的信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-c 或 –codename</td> 
+   <td align="left">显示发行版的代号</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d 或 –description</td> 
+   <td align="left">显示发行版的简介</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-h 或 –help</td> 
+   <td align="left">显示帮助</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-i 或 –id</td> 
+   <td align="left">显示发行版的名称</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-r 或 –relaese</td> 
+   <td align="left">显示发行的版本号</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s 或 –short</td> 
+   <td align="left">显示简要的信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v 或 –version</td> 
+   <td align="left">显示版本</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

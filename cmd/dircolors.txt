@@ -1,0 +1,38 @@
+<h2>语法</h2> 
+<p>dircolors [颜色设置文件]</p> 
+<p>或</p> 
+<p>dircolors [-bcp] [–help] [–version]</p> 
+<h2>功能介绍</h2> 
+<p>dircolors 可根据 [颜色设置文件] 来设置 LS_COLORS 环境变量（第一种语法），或是显示设置 LS_COLORS 环境变量的 shell 命名（第二种语法）。ls 命令会根据 LS_COLORS 的变量值，在显示文件与目录时，以颜色来区别不同类型的文件与目录。一般的使用方法是在 .bash_profile 中加入 dircolors 命令，以便开机时，即设好 LS_COLORS 变量。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-p 或 –print –database</td> 
+   <td align="left">显示默认值。测参数丶显示结果可直接作为 [颜色设置文件]</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–help</td> 
+   <td align="left">显示帮助</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–version</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-b</td> 
+   <td align="left"></td> 
+  </tr> 
+  <tr> 
+   <td align="left">-c</td> 
+   <td align="left"></td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

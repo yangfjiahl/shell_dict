@@ -1,0 +1,43 @@
+<h2>语法</h2> 
+<p>telinit [-t&lt;描述&gt;] [012345abcqQsS]</p> 
+<h2>功能介绍</h2> 
+<p>职位</p> 
+<p>为了要符合于各种执行场合的需求，Linux操作系统将操作环境非为7个执行等级，可设定在不同的等级索要启动的服务。/etc/inittab 设定文件用来制定i型同开机时所要进入的执行等级及启动的服务。系统完成开机后，若想变更等级，则可使用telinit命令来立即切换i型同的执行等级。</p> 
+<p>不过需要注意的是，telinit所切换的执行等级支队此次开机有效。若想更改以后每次启动 Linux 时所进入的执行等级，还是请修改 /etc/inittab 设定文件。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">0~6</td> 
+   <td align="left">切换到指定的执行等级</td> 
+  </tr> 
+  <tr> 
+   <td align="left">a，b或c</td> 
+   <td align="left">奇幻到指定的a、b或c执行等级</td> 
+  </tr> 
+  <tr> 
+   <td align="left">q 或 Q</td> 
+   <td align="left">重新检查 /etc/inittab 设定文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">s 或 S</td> 
+   <td align="left">进入单人用户模式</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-t&lt;描述&gt;</td> 
+   <td align="left">在等待指定的描述之后，即切换执行等级。默认值为5秒</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>先显示当前的执行等级后，人后奇幻到执行等级3：</p> 
+<pre><code class="language-bash"># runlevel
+N  5
+# telinit 3
+</code></pre>

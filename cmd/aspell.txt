@@ -1,0 +1,28 @@
+<h2>语法</h2> 
+<p>aspell [] [文件]</p> 
+<h2>功能介绍</h2> 
+<p>Aspell 是一个强大的拼写检查工具，尤其是对于程序员来说。在 Linux 下，大部分程序员应该是用 Vim 或者 Emacs 写代码，它们有内建拼写检查功能，比如 vim 可以用 :setlocal spell spelllang=en_us 开启对美式英语的拼写检查。</p> 
+<h2>参数</h2> 
+<p>-c 检查文件</p> 
+<p>-a 兼容模式</p> 
+<p>-l 从标准输入产生一个拼写错误的单词列表</p> 
+<p>config&lt;关键词&gt; 打印当前某一参数值</p> 
+<p>filter 过滤某些单词</p> 
+<p>-？ |help 帮助信息</p> 
+<p>-v 版本信息</p> 
+<p>–conf=&lt;字符串&gt; 主配置文件</p> 
+<p>–conf-dir=&lt;字符串&gt; 本地的主配置文件</p> 
+<p>–data-dir=&lt;字符串&gt; 本地语音数据文件</p> 
+<p>–dict-dir=&lt;字符串&gt; 本地主单词列表</p> 
+<p>–add|rem-filter=&lt;字符串&gt; 添加或者移除一个过滤器</p> 
+<p>–mode=&lt;字符串&gt; 过滤器模式</p> 
+<p>-e 电子邮件模式</p> 
+<p>-H HTML/SGML模式</p> 
+<p>-t 文档模式</p> 
+<h2>例子</h2> 
+<p>检查文件错误</p> 
+<pre><code class="language-bash"># aspell -c file.c        //检查文件file.c
+</code></pre> 
+<p>将文件中出现的拼写错误输出到标准输出设备</p> 
+<pre><code class="language-bash"># aspell -l&lt;tjwqq.c  //将tjwqq.c中拼错的单词输出到标准输出设备
+</code></pre>

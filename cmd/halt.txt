@@ -1,0 +1,43 @@
+<h2>语法</h2> 
+<p>halt [-dfinpw]</p> 
+<h2>功能介绍</h2> 
+<p>halt 会先检查系统的 runlevel（执行等级）。若执行等级不为0或6，则关闭系统，否则调用 shutdown 来关闭系统。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-d</td> 
+   <td align="left">不要在zwtmp（登录日志文件）中保存日志</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f</td> 
+   <td align="left">不论当前的runlevel是什么，不调用shutdown就强制关闭系统</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-i</td> 
+   <td align="left">在halt之前关闭全部的网络接口</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n</td> 
+   <td align="left">halt前不用先执行sync（把内存中的数据写到硬盘）</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-p</td> 
+   <td align="left">halt之后执行pwderoff（关闭电源）</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-w</td> 
+   <td align="left">尽在wtmp中日志，不实际结束系统</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>关闭系统，并关闭电源</p> 
+<pre><code class="language-bash"># halt－ｐ
+</code></pre>

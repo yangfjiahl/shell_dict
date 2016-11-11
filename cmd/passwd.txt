@@ -1,0 +1,43 @@
+<h2>语法</h2> 
+<p>passwd [-dklS] [-u &lt;-f&gt;] [用户名称]</p> 
+<h2>功能介绍</h2> 
+<p>passwd 命令可让用户更改自己的密码，而系统管理员则能用来管理系统用户的密码。只有管理员可以指定用户名称，一般用户只能改变自己的密码。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-d</td> 
+   <td align="left">删除密码。本参数仅有系统管理员才能使用</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f</td> 
+   <td align="left">强制执行。当要解开上锁的账号时，若该账号原本没有密码，则passwd命令会拒绝删除字首符号“!”。加上本参数后，passwd 会随机产生一组密码，强制解开锁住的账号。此参数配合“-u”参数使用。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-k</td> 
+   <td align="left">设定只有在密码预期失效后，方能更新</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-S</td> 
+   <td align="left">列出密码的相关信息。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-u</td> 
+   <td align="left">解开已上锁的账号。使用这项参数之后，passwd 命令会把加上“!”号字首删除，回复该账号的密码，让指定的用户得以登录系统。本参数仅有系统管理员方能使用。</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>变更自己的密码：</p> 
+<pre><code class="language-bash"># passwd
+...
+</code></pre> 
+<p>变更tom的密码：</p> 
+<pre><code class="language-bash"># passwd tom
+</code></pre>

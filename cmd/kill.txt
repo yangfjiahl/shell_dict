@@ -1,0 +1,38 @@
+<h2>语法</h2> 
+<p>kill [-s &lt;名称或编号&gt;] [程序…]</p> 
+<p>或</p> 
+<p>kill [-l &lt;信息编号&gt;]</p> 
+<h2>功能介绍</h2> 
+<p>kill 可将制定的信息送至执行中的程序。默认的信息为SIGTERM(15)，可将制定程序终止。若仍无法终止该程序，可使用SIGKILL(9)信息尝试强制删除程序。</p> 
+<p>程序或工作的标号可利用 ps 命令或 job 命令查看。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-l</td> 
+   <td align="left">若不加&lt;信息编号&gt;选项，则“-l”参数会列出全部的信息名称。若加上&lt;信息编号&gt;选项，则列出该信息编号的信息名称</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s &lt;信息名称或编号&gt;</td> 
+   <td align="left">指定要送出的信息。若是指定信息名称，可以用全名，或是仅适用“SIG”后的字符串。例如，如要指定“SIGTERM”，只要用“TERM”即可。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">[程序]</td> 
+   <td align="left">可以是程序的PID或是PGID，也可以是工作编号。若是工作编号，标号钱要加上百分比符号（%）</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>列出所有信息名称：</p> 
+<pre><code class="language-bash"># kill -l
+...
+</code></pre> 
+<p>强制删除编号为 9989 的程序：</p> 
+<pre><code class="language-bash"># kill -s 9 9989
+</code></pre>

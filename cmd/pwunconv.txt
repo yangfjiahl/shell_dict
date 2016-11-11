@@ -1,0 +1,10 @@
+<h2>语法</h2> 
+<p>pwunconv</p> 
+<h2>功能介绍</h2> 
+<p>执行 pwuncoonv 命令可关闭用户影子密码，它会把密码从 /etc/shadow 文件回存到 /etc/passwd 文件里。</p> 
+<h2>参数</h2> 
+<p>无</p> 
+<h2>例子</h2> 
+<p>关闭影子密码，方便直接编辑passwd文件简历、删除用户账号：</p> 
+<pre><code class="language-bash">pwunconv
+</code></pre>

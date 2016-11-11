@@ -1,0 +1,31 @@
+<h2>语法</h2> 
+<p>groupmod [-g &lt;组识别码&gt; &lt;-o&gt;] [-n &lt;新组名称&gt;] [组名称]</p> 
+<h2>功能介绍</h2> 
+<p>需要更改组的识别码或名称时，可通过groupmod命令来完成。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-g</td> 
+   <td align="left">设定要使用的组识别码</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n</td> 
+   <td align="left">设定要使用的组名称。每个组名称在系统中都应该唯一的，加上所给予的组名称已经存在，则返回错误</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-o</td> 
+   <td align="left">重复使用组识别码。每个组识别码都应该是唯一的，假设使用“-g”参数分配组识别码，改编码缺已存在，则返回错误信息。配合“-o”参数使用，可强制系统在已存在的组识别码。本参数需要搭配“-g”才有效果。</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>把组 tom 改为 peter</p> 
+<pre><code class="language-bash"># groupmod -n peter tom
+</code></pre>

@@ -1,0 +1,133 @@
+<h2>语法</h2> 
+<p>sed [-hnV][-e<script>][-f<script文件>][文本文件]</p>
+
+<h2>功能介绍</h2>
+
+<p>sed可依照script的指令，来处理、编辑文本文件。</p>
+
+<h2>参数</h2>
+
+<p>-e<script>或&ndash;expression=<script> 以选项中指定的script来处理输入的文本文件。</p>
+
+<p>-f<script文件>或&ndash;file=<script文件> 以选项中指定的script文件来处理输入的文本文件。</p>
+
+<p>-h或&ndash;help 显示帮助。</p>
+
+<p>-n或&ndash;quiet或&ndash;silent 仅显示script处理后的结果。</p>
+
+<p>-V或&ndash;version 显示版本信息。</p>
+
+<h2>例子</h2>
+
+            </div>
+        </div>
+        <div id="main_right" class="r">
+            <div class="rightItem">
+                <ul>
+                    
+                    <li class="tagItem"><a href="/cmd/tag/edit">文件编辑</a></li>
+                    
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="rightItem">
+                <h2>
+                    sed 相关文章
+                </h2>
+                <ul>
+                    
+                    <li><a href="/cmdline/25">第二十二章 : 格式化输出</a></li>
+                    
+                    <li><a href="/cmdline/24">第二十一章 : 文本处理</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="rightItem">
+    <h2>
+        Shell随机文章
+    </h2>
+    <ul>
+        
+        <li><a href="/cmdline/3">第三章：文件系统中跳转</a></li>
+        
+        <li><a href="/cmdline/6">第五章：操作文件和目录</a></li>
+        
+        <li><a href="/cmdline/7">第六章：使用命令</a></li>
+        
+        <li><a href="/cmdline/8">第七章：重定向</a></li>
+        
+        <li><a href="/cmdline/9">第八章：从 shell 眼中看世界</a></li>
+        
+        <li><a href="/cmdline/10">第九章：键盘高级操作技巧</a></li>
+        
+        <li><a href="/cmdline/12">第十一章：进程</a></li>
+        
+        <li><a href="/shell/13">Linux安装软件</a></li>
+        
+        <li><a href="/cmdline/16">第十三章 : vi 简介</a></li>
+        
+        <li><a href="/cmdline/19">第十六章 : 存储媒介</a></li>
+        
+    </ul>
+</div>
+            <div class="rightItem">
+    <h2>
+        Linux常用命令
+    </h2>
+    <ul>
+        
+        <li class="tagItem"><a href="/cmd/adduser">adduser</a></li>
+        
+        <li class="tagItem"><a href="/cmd/alias">alias</a></li>
+        
+        <li class="tagItem"><a href="/cmd/apachectl">apachectl</a></li>
+        
+        <li class="tagItem"><a href="/cmd/apmd">apmd</a></li>
+        
+        <li class="tagItem"><a href="/cmd/apropos">apropos</a></li>
+        
+        <li class="tagItem"><a href="/cmd/ar">ar</a></li>
+        
+        <li class="tagItem"><a href="/cmd/arpwatch">arpwatch</a></li>
+        
+        <li class="tagItem"><a href="/cmd/aspell">aspell</a></li>
+        
+        <li class="tagItem"><a href="/cmd/aumix">aumix</a></li>
+        
+        <li class="tagItem"><a href="/cmd/badblocks">badblocks</a></li>
+        
+    </ul>
+    <div class="clear"></div>
+</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="links">
+    <div class="wrapper">
+        <h3>友情链接</h3>
+        <hr>
+        <ul>
+            <li>
+                <a href="http://shellbaike.com/cmd/" title="Linux命令大全" target="_blank">Linux命令大全</a>
+            </li>
+            <li>
+                <a href="http://zhikanlouzhu.com/" title="只看楼主网 - 最专业的只看楼主精品帖子网站" target="_blank">只看楼主网</a>
+            </li>
+            <li>
+                <a href="http://luceneapi.com/" title="Lucene API - 最全的Lucene教程、Lucene入门、Lucene API、Lucene资料网站" target="_blank">Lucene API</a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="wrapper" style="text-align: center;">
+        <p>&copy; SHELL 百科</p><br/>
+        <p class="info">最全linux命令大全 Shell脚本编程技巧分享</p>
+        <br/>
+        <p>
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254040888'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1254040888%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> </p> 
+<br> 
+<br>

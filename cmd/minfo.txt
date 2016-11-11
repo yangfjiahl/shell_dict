@@ -1,0 +1,23 @@
+<h2>语法</h2> 
+<p>minfo [-v] [磁盘代号]</p> 
+<h2>功能介绍</h2> 
+<p>mInfo 为 mtools 工具命令，可显示 MS-DOS 文件系统磁盘的各项参数，包括扇区数、磁头数、柱面数等。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-v</td> 
+   <td align="left">除了一般信息外，并显示启动扇区的内容（以十六进制格式来表示）</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示软盘中的各项参数：</p> 
+<pre><code class="language-bash"># minfo A
+</code></pre>

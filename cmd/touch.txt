@@ -1,0 +1,21 @@
+<h2>语法</h2> 
+<p>touch [-acfm]</p> 
+<p>[-r reference-file] [–file=reference-file]</p> 
+<p>[-t MMDDhhmm[[CC]YY][.ss]]</p> 
+<p>[-d time] [–date=time] [–time={atime,access,use,mtime,modify}]</p> 
+<p>[–no-create] [–help] [–version]</p> 
+<p>file1 [file2 …]</p> 
+<h2>功能介绍</h2> 
+<p>touch 指令改变档案的时间记录。 ls -l 可以显示档案的时间记录。</p> 
+<h2>参数</h2> 
+<p>a 改变档案的读取时间记录。</p> 
+<p>m 改变档案的修改时间记录。</p> 
+<p>c 假如目的档案不存在，不会建立新的档案。与 –no-create 的效果一样。</p> 
+<p>f 不使用，是为了与其他 unix 系统的相容性而保留。</p> 
+<p>r 使用参考档的时间记录，与 –file 的效果一样。</p> 
+<p>d 设定时间与日期，可以使用各种不同的格式。</p> 
+<p>t 设定档案的时间记录，格式与 date 指令相同。</p> 
+<p>–no-create 不会建立新档案。</p> 
+<p>–help 列出指令格式。</p> 
+<p>–version 列出版本讯息。</p> 
+<h2>例子</h2>

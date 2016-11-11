@@ -1,0 +1,47 @@
+<h2>语法</h2> 
+<p>info [-dfno] [命令]</p> 
+<h2>功能介绍</h2> 
+<p>就内容来说，info页面比man page编写得要更好、更容易理解，也更友好，但man page使用起来确实要更容易得多。一个man page只有一页，而info页面几乎总是将它们的内容组织成多个区段（称为节点），每个区段也可能包含子区段（称为子节点）。理解这个命令的窍门就是不仅要学习如何在单独的Info页面中浏览导航，还要学习如何在节点和子节点之间切换。可能刚开始会一时很难在info页面的节点之间移动和找到你要的东西，真是具有讽刺意味：原本以为对于新手来说，某个东西比man命令会更好些，但实际上学习和使用起来更困难。</p> 
+<h2>参数</h2> 
+<p>-d：添加包含info格式帮助文档的目录；</p> 
+<p>-f：指定要读取的info格式的帮助文档；</p> 
+<p>-n：指定首先访问的info帮助文件的节点；</p> 
+<p>-o：输出被选择的节点内容到指定文件。</p> 
+<h2>例子</h2> 
+<p>显示 man 命令的帮助信息：</p> 
+<pre><code class="language-bash"># info man
+
+       -a     By default, man will exit after displaying the first manual page
+              it finds.  Using this option forces man to display all the  man-
+              ual pages that match name, not just the first.
+
+       -c     Reformat  the  source man page, even when an up-to-date cat page
+              exists.  This can be meaningful if the cat  page  was  formatted
+              for  a screen with a different number of columns, or if the pre-
+              formatted page is corrupted.
+
+       -d     Don’t actually display the man  pages,  but  do  print  gobs  of
+              debugging information.
+
+       -D     Both display and print debugging info.
+
+       -f     Equivalent to whatis.
+
+       -F or --preformat
+              Format only - do not display.
+
+       -h     Print a help message and exit.
+
+       -k     Equivalent to apropos.
+
+       -K     Search  for  the  specified  string in *all* man pages. Warning:
+              this is probably very slow!  It  helps  to  specify  a  section.
+              (Just  to  give  a  rough idea, on my machine this takes about a
+              minute per 500 man pages.)
+
+       -m  system
+              Specify an alternate set of man pages to  search  based  on  the
+              system name given.
+
+... ...
+</code></pre>

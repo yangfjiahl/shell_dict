@@ -1,0 +1,28 @@
+<h2>语法</h2> 
+<p>nice [-n &lt;优先等级&gt;] [–help] [–version] [执行命令]</p> 
+<h2>功能介绍</h2> 
+<p>nice 命令可以改变程序执行的优先级。通过执行某个命令时，若无特别搭配 nice 命令，则其优先级为 0.如果搭配 nice 命令缺没有设定优先级，则默认为10，即不增反降。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-n &lt;优先等级&gt; -&lt;优先等级&gt; 或 –adjustment=&lt;优先等级&gt;</td> 
+   <td align="left">设定欲执行的命令的优先权等级。等级的范围从-20~19,其中-20最高，19最低，只有系统管理员可以设定负数的等级。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–help</td> 
+   <td align="left">显示帮助</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–version</td> 
+   <td align="left">显示版本</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

@@ -1,0 +1,14 @@
+<h2>语法</h2> 
+<p>mcopy [-b/ptnvmoQOsSrRA] sourcefile targetfile</p> 
+<p>mcopy [-b/ptnvmoQOsSrRA] sourcefile [ sourcefiles… ] targetdirectory</p> 
+<p>mcopy [-tnvm] MSDOSsourcefile</p> 
+<h2>功能介绍</h2> 
+<p>本程序可用来复制 MSDOS 格式档案到 Linux 中，或是由 Linux 中复制 MSDOS 档案到磁片上。mcopy 可复制单一的档案到所指定的档案名称，或是复制数个档案到所指定的目录之中。来源与目的档案可为 MSDOS 或是 Linux 档案。</p> 
+<h2>参数</h2> 
+<p>b 批次模式.这是为大量的档案复制进行最佳化的选项,但是当在复制档案过程中产生 crash 时，会有安全性的问题产生。递回的复制。包含目录所含档案与其下所有子目录中的档案。 p 维持档案原来的属性。</p> 
+<p>Q 当复制多个档案产生错误时，尽快结束程序。</p> 
+<p>t 复制纯文字档案。将 carriage return/line feeds 转换成 line feeds 字元。</p> 
+<p>n 在覆盖 Linux 档案时不会出现警示讯息。</p> 
+<p>o 在覆盖 MSDOS 档案时不会出现警示讯息。</p> 
+<p>m 维持档案原来的修改时间。当目的档案已存在，且使用 -n 选项时，mcopy 会询问是否要覆盖或是另存新档。</p> 
+<h2>例子</h2>

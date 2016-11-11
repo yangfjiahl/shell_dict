@@ -1,0 +1,31 @@
+<h2>语法</h2> 
+<p>dmesg [-cn] [-s&lt;缓冲区大小&gt;]</p> 
+<h2>功能介绍</h2> 
+<p>kernel 会将开机信息存储在ring buffer 中。如果开机时来不及查看信息，可例如 dmesg 来查看。开机信息也存储在 /var/log 目录中名为 dmesg 的文件里。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-c</td> 
+   <td align="left">显示信息后，清除ring buffer中的内容</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s</td> 
+   <td align="left">默认值为8196，刚好等于 ring buffer 的大小。若自定义较大的 ring buffer，则必须在此设置相对应的缓冲区大小，才能看到整个 ring buffer 中的内容</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n</td> 
+   <td align="left">设置记录信息的层级</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示 ring buffer 中的信息：</p> 
+<pre><code class="language-bash"># dmesg
+</code></pre>

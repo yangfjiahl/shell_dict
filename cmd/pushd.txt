@@ -1,0 +1,18 @@
+<h2>语法</h2> 
+<p>push [-n][+n][目录]</p> 
+<h2>功能介绍</h2> 
+<p>ppushd指令用于向shell目录堆栈中添加记录，也可用于调整堆栈中记录的顺序。</p> 
+<h2>参数</h2> 
+<p>-n 将右起第n个目录一道堆栈顶</p> 
+<p>+n 将左起第n个目录一道堆栈顶</p> 
+<p>目录 向堆栈目录中添加目录</p> 
+<h2>例子</h2> 
+<pre><code class="language-bash">root@Mylinux:/tmp/dir4# pushd /tmp/dir3
+/tmp/dir3 /tmp/dir4 /tmp/dir1 ~
+
+root@Mylinux:/tmp/dir3# pushd /tmp/dir2
+/tmp/dir2 /tmp/dir3 /tmp/dir4 /tmp/dir1 ~
+
+root@Mylinux:/tmp/dir2# pushd -1
+/tmp/dir1 ~ /tmp/dir2 /tmp/dir3 /tmp/dir4
+</code></pre>

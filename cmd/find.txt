@@ -1,0 +1,33 @@
+<h2>语法</h2> 
+<p>find path -option [ -print ] [ -exec -ok command ] {}</p> 
+<h2>功能介绍</h2> 
+<p>将档案系统内符合 expression 的档案列出来。你可以指要档案的名称、类别、时间、大小、权限等不同资讯的组合，只有完全相符的才会被列出来。</p> 
+<p>　　find 根据下列规则判断 path 和 expression，在命令列上第一个 - ( ) , ! 之前的部份为 path，之后的是 expression。如果 path 是空字串则使用目前路径，如果 expression 是空字串则使用 -print 为预设 expression。</p> 
+<p>expression 中可使用的选项有二三十个之多，在此只介绍最常用的部份。</p> 
+<h2>参数</h2> 
+<p>-mount, -xdev : 只检查和指定目录在同一个档案系统下的档案，避免列出其它档案系统中的档案</p> 
+<p>-amin n : 在过去 n 分钟内被读取过</p> 
+<p>-anewer file : 比档案 file 更晚被读取过的档案</p> 
+<p>-atime n : 在过去 n 天过读取过的档案</p> 
+<p>-cmin n : 在过去 n 分钟内被修改过</p> 
+<p>-cnewer file :比档案 file 更新的档案</p> 
+<p>-ctime n : 在过去 n 天过修改过的档案</p> 
+<p>-empty : 空的档案-gid n or -group name : gid 是 n 或是 group 名称是 name</p> 
+<p>-ipath p, -path p : 路径名称符合 p 的档案，ipath 会忽略大小写</p> 
+<p>-name name, -iname name : 档案名称符合 name 的档案。iname 会忽略大小写</p> 
+<p>-size n : 档案大小 是 n 单位，b 代表 512 位元组的区块，c 表示字元数，k 表示 kilo bytes，w 是二个位元组。-type c : 档案类型是 c 的档案。</p> 
+<p>d: 目录</p> 
+<p>c: 字型装置档案</p> 
+<p>b: 区块装置档案</p> 
+<p>p: 具名贮列</p> 
+<p>f: 一般档案</p> 
+<p>l: 符号连结</p> 
+<p>s: socket</p> 
+<p>-pid n : process id 是 n 的档案</p> 
+<p>你可以使用 ( ) 将运算式分隔，并使用下列运算。</p> 
+<p>exp1 -and exp2</p> 
+<p>! expr</p> 
+<p>-not expr</p> 
+<p>exp1 -or exp2</p> 
+<p>exp1, exp2</p> 
+<h2>例子</h2>

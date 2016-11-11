@@ -1,0 +1,37 @@
+<h2>语法</h2> 
+<p>pstree [-a] [-c] [-h|-Hpid] [-l] [-n] [-p] [-u] [-G|-U] [pid|user]</p> 
+<p>或</p> 
+<p>pstree -V</p> 
+<h2>功能介绍</h2> 
+<p>将所有行程以树状图显示, 树状图将会以 pid (如果有指定) 或是以 init 这个基本行程为根 (root) ,如果有指定使用者 id , 则树状图会只显示该使用者所拥有的行程</p> 
+<h2>参数</h2> 
+<p>-a 显示该行程的完整指令及参数, 如果是被记忆体置换出去的行程则会加上括号</p> 
+<p>-c 如果有重覆的行程名, 则分开列出 (预设值是会在前面加上 *）</p> 
+<h2>例子</h2> 
+<pre><code class="language-bash"># pstree
+init─┬─abrtd
+     ├─acce-3.10.61.0-
+     ├─acpid
+     ├─atd
+     ├─auditd───{auditd}
+     ├─chashao───4*[{chashao}]
+     ├─data12306───4*[{data12306}]
+     ├─dbus-daemon
+     ├─hald─┬─hald-runner─┬─hald-addon-acpi
+     │      │             └─hald-addon-inpu
+     │      └─{hald}
+     ├─irqbalance
+     ├─6*[mingetty]
+     ├─mysqld_safe───mysqld───19*[{mysqld}]
+     ├─nginx───4*[nginx]
+     ├─php-fpm───3*[php-fpm]
+     ├─rsyslogd───3*[{rsyslogd}]
+     ├─2*[screen───bash]
+     ├─shellweb───4*[{shellweb}]
+     ├─sshd─┬─7*[sshd───bash]
+     │      ├─9*[sshd───sftp-server]
+     │      ├─2*[sshd]
+     │      ├─sshd───bash───pstree
+     │      └─2*[sshd───sshd]
+     └─udevd───2*[udevd]
+</code></pre>

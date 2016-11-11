@@ -1,0 +1,39 @@
+<h2>语法</h2> 
+<p>modinfo [-adhpV] [模块文件]</p> 
+<h2>功能介绍</h2> 
+<p>modinfo 会查看kernel模块的物件文件，以显示该模块的相关信息。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a 或 –author</td> 
+   <td align="left">显示模块开发人员</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d 或 –description</td> 
+   <td align="left">显示模块的帮助</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-h 或 –help</td> 
+   <td align="left">显示帮助信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-p 或 –parameters</td> 
+   <td align="left">显示模块所支持的参数</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-V 或 –version</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示指定模块的帮助：</p> 
+<pre><code class="language-bash">#  modinfo -d xxxx.o
+</code></pre>

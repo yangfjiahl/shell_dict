@@ -1,0 +1,98 @@
+<h2>语法</h2> 
+<p>set [+-abCdefhHklmnpPtuvx]</p> 
+<h2>功能介绍</h2> 
+<p>set 为 bash shell 中查询或设定环境变量的命令。set 命令能依照不同的需要设定所使用 shell 的执行方式。而 set 也能查询变量，shell 可将变量到处成为环境变量（使用 export命令），让所有的命令都可存取环境变量。若不加任何参数，则会显示当前所有变量。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a</td> 
+   <td align="left">表示已修改的变量，以供输出至环境变量</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-b</td> 
+   <td align="left">使被终止的后台程序立刻返回执行情况</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-C</td> 
+   <td align="left">专项所产生的文件无法复写已存在的文件</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d</td> 
+   <td align="left">shell 默认会用哈希表记忆使用过的命令，以加速命令的指定。使用“-d”参数可取消该功能</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-e</td> 
+   <td align="left">若命令返回值不等于0，则立即退出 shell</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f</td> 
+   <td align="left">取消使用通配字符。shell 有3中通配符：“*”，“？”及“[abc]” 。例如“ab*”表示以 ab 为开头的字符串。“安标？”则是ab开头，长度为3个字符的字符串。“ab[a-c]”意指aba、abb、及abc等3个字符串</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-h</td> 
+   <td align="left">自动记录函数的所在位置</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-H</td> 
+   <td align="left">可利用“!”加上&lt;命令编号&gt;的方式来执行history中记录的命令</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-k</td> 
+   <td align="left">命令所给的参数会被视为此命令的环境变量</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-l</td> 
+   <td align="left">记录 for 循环的变量名称</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-m</td> 
+   <td align="left">使用监视模式。在此模式下，后台执行的程序若执行结束，会显示执行结果</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n</td> 
+   <td align="left">只读取命令，而不实际执行。通常用来测试 shell script 是否正确</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-p</td> 
+   <td align="left">启动优先顺序模式</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-t</td> 
+   <td align="left">执行完随后的命令，即推出 shell</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-u</td> 
+   <td align="left">当执行时，使用到未定义过的变量，则显示错误信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v</td> 
+   <td align="left">显示 shell 所读取的输入值</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-x</td> 
+   <td align="left">执行命令后，会先显示该命令及所下的参数</td> 
+  </tr> 
+  <tr> 
+   <td align="left">+&lt;参数&gt;</td> 
+   <td align="left">取消某个 set 曾启动的参数。此&lt;参数&gt;可为以上介绍过的参数。例如执行 set -x 后，可执行 set +x 取消</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>查询当前所有的变量：</p> 
+<pre><code class="language-bash"># set
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:expand_aliases:extquote:force_fignore:hostcomplete:interactive_comments:login_shell:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+...
+</code></pre>

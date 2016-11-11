@@ -1,0 +1,39 @@
+<h2>语法</h2> 
+<p>insmod [-fkmpsvxX] [-o &lt;模块名称&gt;] [模块文件] [符号名称=符号值]</p> 
+<h2>功能介绍</h2> 
+<p>Linux 有许多功能是通过模块的方式，在需要的时候才载入 lernel。如此可是 kernel 较为精简，进而提高效率，以及保证较大的弹性。这类可载入的模块，通常是设备驱动程序，例如光驱、声卡或各种系统的驱动程序等待。</p> 
+<p>insmod 可将模块载入执行中的 kernel。载入时，insmod 会建立 kernel 符号表（symbol table）与模块的对应关系。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>载入 OS/2 的 HPFS 文件系统的驱动程序：</p> 
+<pre><code class="language-bash"># insmod hpfs
+</code></pre> 
+<p>载入 Windows NT 的 NTFS 文件系统的驱动程序，载入时并将此模块设为可自动卸载的模块：</p> 
+<pre><code class="language-bash"># insmod -k ntfs
+</code></pre> 
+<p>测试能否正确地载入 nfs.o 模块</p> 
+<pre><code class="language-bash"># insmod -p nfs
+insmod: can't read 'nfs': No such file or directory
+</code></pre>

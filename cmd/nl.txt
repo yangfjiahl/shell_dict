@@ -1,0 +1,31 @@
+<h2>语法</h2> 
+<p>nl [ -b Type ] [ -f Type ] [ -h Type ] [ -l Number ] [ -d Delimiter ] [ -i Number ] [ -n Format ] [ -v Number ] [ -w Number ] [ -p ] [ -s Separator ] [ File ]</p> 
+<h2>功能介绍</h2> 
+<p>nl 是一个简单但很好用的编号过滤工具，我在输入的地方下了参数，让所有行列的编码皆靠左，nl 是供了非常多的参数使用，可以定义到很细很细的程序来制定它下好编号的输出。</p> 
+<h2>参数</h2> 
+<p>-b ：指定行号指定的方式，主要有两种：</p> 
+<p>-b a ：表示不论是否为空行，也同样列出行号(类似 cat -n)；</p> 
+<p>-b t ：如果有空行，空的那一行不要列出行号(默认值)；</p> 
+<p>-n ：列出行号表示的方法，主要有三种：</p> 
+<p>-n ln ：行号在萤幕的最左方显示；</p> 
+<p>-n rn ：行号在自己栏位的最右方显示，且不加 0 ；</p> 
+<p>-n rz ：行号在自己栏位的最右方显示，且加 0 ；</p> 
+<p>-w ：行号栏位的占用的位数。</p> 
+<p>-p 在逻辑定界符处不重新开始计算。</p> 
+<h2>例子</h2> 
+<p>用 nl 列出 log2012.log 的内容：</p> 
+<pre><code class="language-bash"># nl log2012.log 
+     1  2012-01
+     2  2012-02
+       
+       
+     3  ======[root@localhost test]#
+</code></pre> 
+<p>用 nl 列出 log2012.log 的内容，空本行也加上行号：</p> 
+<pre><code class="language-bash"># nl -b a log2012.log 
+     1  2012-01
+     2  2012-02
+     3
+     4
+     5  ======[root@localhost test]#
+</code></pre>

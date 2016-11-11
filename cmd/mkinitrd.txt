@@ -1,0 +1,12 @@
+<h2>语法</h2> 
+<p>mkinitrd [-fv][–omit-scsi-modules][–version][–preload=&lt;模块名称&gt;][–with=&lt;模块名称&gt;][映像文件][Kernel 版本]</p> 
+<h2>功能介绍</h2> 
+<p>mkinitrd可建立映像文件，以供Linux开机时载入ramdisk。</p> 
+<h2>参数</h2> 
+<p>-f 若指定的映像问家名称与现有文件重复，则覆盖现有的文件。</p> 
+<p>-v　　执行时显示详细的信息。</p> 
+<p>–omit-scsi-modules 不要载入SCSI模块。</p> 
+<p>–preload=&lt;模块名称&gt; 指定要载入的模块。</p> 
+<p>–with=&lt;模块名称&gt; 指定要载入的模块。</p> 
+<p>–version 显示版本信息。</p> 
+<h2>例子</h2>

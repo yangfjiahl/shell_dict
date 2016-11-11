@@ -1,0 +1,90 @@
+<h2>语法</h2> 
+<p>chkconfig [–add] [–del] [–list] [系统服务]</p> 
+<p>或</p> 
+<p>chkconfig [–level&lt;运行级代号&gt;] [系统服务] [on/off/reset]</p> 
+<h2>功能介绍</h2> 
+<p>这是 Red Hat 公司遵循 GPL 规则所开发的程序，它可查询操作系统在每一个运行级中，会执行哪些系统服务，其中包括各类守护进程（Daemon）。</p> 
+<p>Linux 操作系统间操作环境分为以下7个等级：</p> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">运行级</th> 
+   <th align="left">执行的状态</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">0</td> 
+   <td align="left">关机（请不要切换到此运行级）</td> 
+  </tr> 
+  <tr> 
+   <td align="left">1</td> 
+   <td align="left">单人用户模式的文字界面</td> 
+  </tr> 
+  <tr> 
+   <td align="left">2</td> 
+   <td align="left">多人用户模式的文字界面，但不具有网络文件系统（NFS）功能</td> 
+  </tr> 
+  <tr> 
+   <td align="left">3</td> 
+   <td align="left">多人用户模式的文字界面，具有全部的网络功能</td> 
+  </tr> 
+  <tr> 
+   <td align="left">4</td> 
+   <td align="left">某些发型的 Linux 使用此等级进入X Window</td> 
+  </tr> 
+  <tr> 
+   <td align="left">5</td> 
+   <td align="left">某些发型的 Linux 则使用此等级进入X Window</td> 
+  </tr> 
+  <tr> 
+   <td align="left">6</td> 
+   <td align="left">重新开机</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">–add</td> 
+   <td align="left">新增所指定的系统服务，让 chkconfig 命令得意管理它，并同时在系统启动的脚本内新增相关数据</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–del</td> 
+   <td align="left">删除所指定的系统服务，不在有 chkconfig 命令管理，并同时在系统启动的脚本内删除该相关数据</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–level&lt;运行级代号&gt;</td> 
+   <td align="left">指定系统服务要在哪一个运行级中打开或关闭，运行级代号范围再0-6之间</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–list</td> 
+   <td align="left">列出当前可从 chkconfig 命令管理的所有系统服务，并标出服务在的运行级代号</td> 
+  </tr> 
+  <tr> 
+   <td align="left">on</td> 
+   <td align="left">指定的运行级，打开该系统服务。如不指定运行级，默认会在运行级3、4、5打开该服务</td> 
+  </tr> 
+  <tr> 
+   <td align="left">off</td> 
+   <td align="left">在指定的运行级关闭该系统服务。如不指定运行级，默认会在运行级3、4、5关闭该服务</td> 
+  </tr> 
+  <tr> 
+   <td align="left">reset</td> 
+   <td align="left">在指定的运行级重置该系统服务，使他回到系统启动时，其脚本内的默认值</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>关闭 sendmail 系统服务，由于执行 chkconfig 时没有制定运行级，所以默认会在运行级3、4、5更改此服务的设置值：</p> 
+<pre><code class="language-bash"># chkconfig --list sendmail
+sendmail        0:off   1:off   2:on    3:on    4:on    5:on    6:off
+# chkconfig sendmail off
+</code></pre>

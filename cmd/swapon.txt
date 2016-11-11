@@ -1,0 +1,15 @@
+<h2>语法</h2> 
+<p>swapon [-ahsV] [-p &lt;优先顺序&gt;] 设备</p> 
+<h2>功能介绍</h2> 
+<p>Linux 系统的内存管理必须使用建立交换区来为独立的磁盘分区。简历好磁盘分区后，还必须使用swapon将分区启动成为系统可用的交换区。若要关闭启动的交换区，请使用swapoff命令。</p> 
+<h2>参数</h2> 
+<p>-h x显示帮助信息</p> 
+<p>-V 显示版本讯息</p> 
+<p>-s 显示简短的装置讯息</p> 
+<p>-a 自动启动所有SWAP装置</p> 
+<p>-p 设定优先权，你可以在0到32767中间选一个数字给他。或是在 /etc/fstab 里面加上 pri=<a href="[value]就是0~32767中间一个数字">value</a>，然后你就可以很方便的直接使用 swapon -a 来启动他们，而且有优先权设定。 swapon 是开启swap.</p> 
+<p>相对的,便有一个关闭swap的指令,swapoff.</p> 
+<h2>例子</h2> 
+<p>启动 /dev/had3交换区</p> 
+<pre><code class="language-bash"># swapon /dev/had3
+</code></pre>

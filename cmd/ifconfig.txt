@@ -1,0 +1,16 @@
+<h2>语法</h2> 
+<p>ifconfig [网络设备][down up -allmulti -arp -promisc][add&lt;地址&gt;][del&lt;地址&gt;][
+ <hw<网络设备类型>
+  &lt;硬件地址&gt;][io_addr
+  <i 地址>][irq
+   <irq地址>
+    ][media&lt;网络媒介类型&gt;][mem_start&lt;内存地址&gt;][metric&lt;数目&gt;][mtu&lt;字节&gt;][netmask&lt;子网掩码&gt;][tunnel&lt;地址&gt;][-broadcast&lt;地址&gt;][-pointopoint&lt;地址&gt;][IP地址]
+   </irq地址></i>
+ </hw<网络设备类型></p>
+<i 地址> <h2>功能介绍</h2> <p>ifconfig可设置网络设备的状态，或是显示目前的设置。</p> <h2>参数</h2> <p>add&lt;地址&gt; 设置网络设备IPv6的IP地址。</p> <p>del&lt;地址&gt; 删除网络设备IPv6的IP地址。</p> <p>down 关闭指定的网络设备。</p> <p>
+  <hw<网络设备类型>
+   &lt;硬件地址&gt; 设置网络设备的类型与硬件地址。
+  </hw<网络设备类型></p> <p>io_addr<i 地址> 设置网络设备的I/O地址。</i></p><i 地址> <p>irq
+   <irq地址>
+     设置网络设备的IRQ。
+   </irq地址></p> <p>media&lt;网络媒介类型&gt; 设置网络设备的媒介类型。</p> <p>mem_start&lt;内存地址&gt; 设置网络设备在主内存所占用的起始地址。</p> <p>metric&lt;数目&gt; 指定在计算数据包的转送次数时，所要加上的数目。</p> <p>mtu&lt;字节&gt; 设置网络设备的MTU。</p> <p>netmask&lt;子网掩码&gt; 设置网络设备的子网掩码。</p> <p>tunnel&lt;地址&gt; 建立IPv4与IPv6之间的隧道通信地址。</p> <p>up 启动指定的网络设备。</p> <p>-broadcast&lt;地址&gt; 将要送往指定地址的数据包当成广播数据包来处理。</p> <p>-pointopoint&lt;地址&gt; 与指定地址的网络设备建立直接连线，此模式具有保密功能。</p> <p>-promisc 关闭或启动指定网络设备的promiscuous模式。</p> <p>[IP地址] 指定网络设备的IP地址。</p> <p>[网络设备] 指定网络设备的名称。</p> <h2>例子</h2> </i></i>

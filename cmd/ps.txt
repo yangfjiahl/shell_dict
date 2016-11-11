@@ -1,0 +1,132 @@
+<h2>语法</h2> 
+<p>ps [options]</p> 
+<h2>功能介绍</h2> 
+<p>ps 是用来报告程序执行状况的命令，可以搭配kill命令随时中断、删除不必要的程序。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-A</td> 
+   <td align="left">列出所有的行程</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-w</td> 
+   <td align="left">显示加宽可以显示较多的资讯</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-au</td> 
+   <td align="left">显示较详细的资讯</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-aux</td> 
+   <td align="left">显示所有包含其他使用者的行程</td> 
+  </tr> 
+  <tr> 
+   <td align="left">au(x)</td> 
+   <td align="left">输出格式 :</td> 
+  </tr> 
+  <tr> 
+   <td align="left">USER</td> 
+   <td align="left">PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND</td> 
+  </tr> 
+  <tr> 
+   <td align="left">USER</td> 
+   <td align="left">行程拥有者</td> 
+  </tr> 
+  <tr> 
+   <td align="left">PID</td> 
+   <td align="left">pid</td> 
+  </tr> 
+  <tr> 
+   <td align="left">%CPU</td> 
+   <td align="left">占用的 CPU 使用率</td> 
+  </tr> 
+  <tr> 
+   <td align="left">%MEM</td> 
+   <td align="left">占用的记忆体使用率</td> 
+  </tr> 
+  <tr> 
+   <td align="left">VSZ</td> 
+   <td align="left">占用的虚拟记忆体大小</td> 
+  </tr> 
+  <tr> 
+   <td align="left">RSS</td> 
+   <td align="left">占用的记忆体大小</td> 
+  </tr> 
+  <tr> 
+   <td align="left">TTY</td> 
+   <td align="left">终端的次要装置号码 (minor device number of tty)</td> 
+  </tr> 
+  <tr> 
+   <td align="left">STAT</td> 
+   <td align="left">该行程的状态:</td> 
+  </tr> 
+  <tr> 
+   <td align="left">D</td> 
+   <td align="left">不可中断的静止 (通悸□□缜b进行 I/O 动作)</td> 
+  </tr> 
+  <tr> 
+   <td align="left">R</td> 
+   <td align="left">正在执行中</td> 
+  </tr> 
+  <tr> 
+   <td align="left">S</td> 
+   <td align="left">静止状态</td> 
+  </tr> 
+  <tr> 
+   <td align="left">T</td> 
+   <td align="left">暂停执行</td> 
+  </tr> 
+  <tr> 
+   <td align="left">Z</td> 
+   <td align="left">不存在但暂时无法消除</td> 
+  </tr> 
+  <tr> 
+   <td align="left">W</td> 
+   <td align="left">没有足够的记忆体分页可分配</td> 
+  </tr> 
+  <tr> 
+   <td align="left">&lt;</td> 
+   <td align="left">高优先序的行程</td> 
+  </tr> 
+  <tr> 
+   <td align="left">N</td> 
+   <td align="left">低优先序的行程</td> 
+  </tr> 
+  <tr> 
+   <td align="left">L</td> 
+   <td align="left">有记忆体分页分配并锁在记忆体内 (实时系统或捱A I/O)</td> 
+  </tr> 
+  <tr> 
+   <td align="left">START</td> 
+   <td align="left">行程开始时间</td> 
+  </tr> 
+  <tr> 
+   <td align="left">TIME</td> 
+   <td align="left">执行的时间</td> 
+  </tr> 
+  <tr> 
+   <td align="left">COMMAND</td> 
+   <td align="left">所执行的指令</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<pre><code class="language-bash"># ps
+PID TTY TIME CMD
+2791 ttyp0 00:00:00 tcsh
+3092 ttyp0 00:00:00 ps
+</code></pre> 
+<pre><code class="language-bash"># ps -aux
+USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
+root 1 0.0 0.7 1096 472 ? S Sep10 0:03 init [3]
+root 2 0.0 0.0 0 0 ? SW Sep10 0:00 [kflushd]
+root 3 0.0 0.0 0 0 ? SW Sep10 0:00 [kpiod]
+root 4 0.0 0.0 0 0 ? SW Sep10 0:00 [kswapd]
+</code></pre>

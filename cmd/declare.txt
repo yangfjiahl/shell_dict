@@ -1,0 +1,47 @@
+<h2>语法</h2> 
+<p>declare [+/-] [rxi] [变量名称=设置值]</p> 
+<p>或</p> 
+<p>declare [-f]</p> 
+<h2>功能介绍</h2> 
+<p>declare 命令在第一种语法中可用来声明变量并且变量的属性（[rxi]即为变量的属性），在第二种语法中可用来显示 shell 函数。</p> 
+<p>若不加上任何参数，则会显示全部的 shell 变量与函数（与执行 set 命令的效果相同）</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">+/-</td> 
+   <td align="left">- 可用来指定变量的属性， + 则是取消变量所设属性</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f</td> 
+   <td align="left">仅显示函数</td> 
+  </tr> 
+  <tr> 
+   <td align="left">r</td> 
+   <td align="left">将变量设置为制度</td> 
+  </tr> 
+  <tr> 
+   <td align="left">x</td> 
+   <td align="left">指定的变量会成为环境变量，可供 shell 意外的程序使用</td> 
+  </tr> 
+  <tr> 
+   <td align="left">i</td> 
+   <td align="left">[设置值] 可以是数值、字符串或运算式。当[设置值]为运算式时，若指定 -i 属性，则会先求出运算式的结果，在将结构指定给变量</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示 shell 全部的变量级函数：</p> 
+<pre><code class="language-bash"># declare
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:expand_aliases:extquote:force_fignore:hostcomplete:interactive_comments:login_shell:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+...
+</code></pre>

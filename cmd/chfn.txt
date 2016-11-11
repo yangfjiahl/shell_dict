@@ -1,0 +1,43 @@
+<h2>语法</h2> 
+<p>chfn [-uv] [-f &lt;真实姓名&gt;] [-h &lt;家庭电话&gt;] [-o &lt;办公地址&gt;] [-p &lt;办公电话&gt;] [账号名称]</p> 
+<h2>功能介绍</h2> 
+<p>chfn 命令可用来更改执行 finger 命令时所显示的信息，这些信息都存放在 /etc 目录里的 passwd 文件里。若不指定任何参数，则 chfn 命令会进入问答式界面。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-f</td> 
+   <td align="left">设置真实姓名</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-h</td> 
+   <td align="left">设置家庭的电话号码</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-o</td> 
+   <td align="left">设置办公室的地址</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-p</td> 
+   <td align="left">设置办公室的电话号码</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-u 或 –help</td> 
+   <td align="left">显示帮助信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v 或 –version</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>设置用户 tom 的电话为123456：</p> 
+<pre><code class="language-bash"># chfn -h 123456 tom
+</code></pre>

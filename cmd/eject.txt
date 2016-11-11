@@ -1,0 +1,18 @@
+<h2>语法</h2> 
+<p>eject [-dfhnqrstv][-a &lt;开关&gt;][-c &lt;光驱编号&gt;][设备]</p> 
+<h2>功能介绍</h2> 
+<p>若设备已挂入，则eject会先将该设备卸除再退出。</p> 
+<h2>参数</h2> 
+<p>[设备] 设备可以是驱动程序名称，也可以是挂入点。</p> 
+<p>-a&lt;开关&gt;或–auto&lt;开关&gt; 控制设备的自动退出功能。</p> 
+<p>-c&lt;光驱编号&gt;或–changerslut&lt;光驱编号&gt; 选择光驱柜中的光驱。</p> 
+<p>-d或–default 显示预设的设备，而不是实际执行动作。</p> 
+<p>-f或–floppy 退出抽取式磁盘。</p> 
+<p>-h或–help 显示帮助。</p> 
+<p>-n或–noop 显示指定的设备。</p> 
+<p>-q或–tape 退出磁带。</p> 
+<p>-r或–cdrom 退出光盘。</p> 
+<p>-s或–scsi 以SCSI指令来退出设备。</p> 
+<p>-t或–trayclose 关闭光盘的托盘。</p> 
+<p>-v或–verbose 执行时，显示详细的说明。</p> 
+<h2>例子</h2>

@@ -1,0 +1,16 @@
+<h2>语法</h2> 
+<p>uulog [-DFISv][-&lt;行数&gt;][-f&lt;主机&gt;][-I&lt;配置文件&gt;][-n&lt;行数&gt;][-s&lt;主机&gt;][-u&lt;用户&gt;][-X&lt;层级&gt;][–help]</p> 
+<h2>功能介绍</h2> 
+<p>uulog可用来显示UUCP记录文件中记录。</p> 
+<h2>参数</h2> 
+<p>-D或–debuglog 显示排错记录。</p> 
+<p>-f&lt;主机&gt;或–follow&lt;主机&gt; 与-F参数类似，但仅显示与指定主机相关的记录。</p> 
+<p>-I&lt;配置文件&gt;或–config&lt;配置文件&gt; 指定程序的配置文件。</p> 
+<p>-&lt;行数&gt;,-n&lt;行数&gt;或–lines&lt;行数&gt; 显示记录文件中，从最后算起指定行数的数值。</p> 
+<p>-s&lt;主机&gt; 仅显示记录文件中，与指定文件相关的记录。</p> 
+<p>-S或–statslog 显示统计记录。</p> 
+<p>-u&lt;用户&gt;或–suer&lt;用户&gt; 仅显示记录文件中，与指定用户相关的记录。</p> 
+<p>-v或–version 显示版本信息。</p> 
+<p>-X&lt;层级&gt;或–debug&lt;层级&gt; 设定排错层级。</p> 
+<p>–help 显示帮助。</p> 
+<h2>例子</h2>

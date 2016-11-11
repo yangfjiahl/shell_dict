@@ -1,0 +1,40 @@
+<h2>语法</h2> 
+<p>diff [-abBcdefHilnNpPqrstTuvwy][-&lt;行数&gt;][-C &lt;行数&gt;][-D &lt;巨集名称&gt;][-I &lt;字符或字符串&gt;][-S &lt;文件&gt;][-W &lt;宽度&gt;][-x &lt;文件或目录&gt;][-X &lt;文件&gt;][–help][–left-column][–suppress-common-line][文件或目录1][文件或目录2]</p> 
+<h2>功能介绍</h2> 
+<p>diff以逐行的方式，比较文本文件的异同处。所是指定要比较目录，则diff会比较目录中相同文件名的文件，但不会比较其中子目录。</p> 
+<h2>参数</h2> 
+<p>-&lt;行数&gt; 　指定要显示多少行的文本。此参数必须与-c或-u参数一并使用。</p> 
+<p>-a或–text 　diff预设只会逐行比较文本文件。</p> 
+<p>-b或–ignore-space-change 　不检查空格字符的不同。</p> 
+<p>-B或–ignore-blank-lines 　不检查空白行。</p> 
+<p>-c 　显示全部内文，并标出不同之处。</p> 
+<p>-C&lt;行数&gt;或–context&lt;行数&gt; 　与执行”-c-&lt;行数&gt;“指令相同。</p> 
+<p>-d或–minimal 　使用不同的演算法，以较小的单位来做比较。</p> 
+<p>-D&lt;巨集名称&gt;或ifdef&lt;巨集名称&gt; 　此参数的输出格式可用于前置处理器巨集。</p> 
+<p>-e或–ed 　此参数的输出格式可用于ed的script文件。</p> 
+<p>-f或-forward-ed 　输出的格式类似ed的script文件，但按照原来文件的顺序来显示不同处。</p> 
+<p>-H或–speed-large-files 　比较大文件时，可加快速度。</p> 
+<p>-l&lt;字符或字符串&gt; 或 –ignore-matching-lines&lt;字符或字符串&gt; 若两个文件在某几行有所不同，而这几行同时都包含了选项中指定的字符或字符串，则不显示这两个文件的差异。 -i或–ignore-case 　不检查大小写的不同。</p> 
+<p>-l或–paginate 　将结果交由pr程序来分页。</p> 
+<p>-n或–rcs 　将比较结果以RCS的格式来显示。</p> 
+<p>-N或–new-file 　在比较目录时，若文件A仅出现在某个目录中，预设会显示：</p> 
+<p>Only in目录：文件A若使用-N参数，则diff会将文件A与一个空白的文件比较。</p> 
+<p>-p 　若比较的文件为C语言的程序码文件时，显示差异所在的函数名称。</p> 
+<p>-P或–unidirectional-new-file 　与-N类似，但只有当第二个目录包含了一个第一个目录所没有的文件时，才会将这个文件与空白的文件做比较。</p> 
+<p>-q或–brief 　仅显示有无差异，不显示详细的信息。</p> 
+<p>-r或–recursive 　比较子目录中的文件。</p> 
+<p>-s或–report-identical-files 　若没有发现任何差异，仍然显示信息。</p> 
+<p>-S&lt;文件&gt;或–starting-file&lt;文件&gt; 　在比较目录时，从指定的文件开始比较。</p> 
+<p>-t或–expand-tabs 　在输出时，将tab字符展开。</p> 
+<p>-T或–initial-tab 　在每行前面加上tab字符以便对齐。</p> 
+<p>-u,-U&lt;列数&gt;或–unified=&lt;列数&gt; 　以合并的方式来显示文件内容的不同。</p> 
+<p>-v或–version 　显示版本信息。</p> 
+<p>-w或–ignore-all-space 　忽略全部的空格字符。</p> 
+<p>-W&lt;宽度&gt;或–width&lt;宽度&gt; 　在使用-y参数时，指定栏宽。</p> 
+<p>-x&lt;文件名或目录&gt;或–exclude&lt;文件名或目录&gt; 　不比较选项中所指定的文件或目录。</p> 
+<p>-X&lt;文件&gt;或–exclude-from&lt;文件&gt; 　您可以将文件或目录类型存成文本文件，然后在=&lt;文件&gt;中指定此文本文件。</p> 
+<p>-y或–side-by-side 　以并列的方式显示文件的异同之处。</p> 
+<p>–help 　显示帮助。</p> 
+<p>–left-column 　在使用-y参数时，若两个文件某一行内容相同，则仅在左侧的栏位显示该行内容。</p> 
+<p>–suppress-common-lines 　在使用-y参数时，仅显示不同之处。</p> 
+<h2>例子</h2>

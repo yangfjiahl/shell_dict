@@ -1,0 +1,37 @@
+<h2>语法</h2> 
+<p>id [-dGnru] [–help] [–version] [用户名称]</p> 
+<h2>功能介绍</h2> 
+<p>id命令会显示用户以及所诉组的设计Id与有效Id。若量Id相同，则仅显示实际Id。</p> 
+<p>若进指定用户名称，而不加任何参数，则显示用户Id，已经所属组的Id。若不指定用户名称，则显示当前用户的Id。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-g 或 –group</td> 
+   <td align="left">显示用户所属组的Id</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-G 或 –groups</td> 
+   <td align="left">显示用户所属附加组的Id。一个用户除了原先建立账号的组之外，也可指定多个附加组。使得该用户具有这些附加组的执行权限</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-r 或 –real</td> 
+   <td align="left">显示实际Id。必须与 -g、-G 或 -u 一起使用</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-i 或 –user</td> 
+   <td align="left">显示用户 Id</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n 或 –name</td> 
+   <td align="left">显示用户、所属组或附加组的名称。必须与-g、-G 或 -u 一起使用</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

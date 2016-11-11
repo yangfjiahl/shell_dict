@@ -1,0 +1,22 @@
+<h2>语法</h2> 
+<p>uux [-bcCIjlnrvz][-a&lt;地址&gt;][-g&lt;等级&gt;][-s&lt;文件&gt;][-x&lt;层级&gt;][–help][指令]</p> 
+<h2>功能介绍</h2> 
+<p>uux可在远端的UUCP主机上执行指令或是执行本机上的指令，但在执行时会使用远端电脑的文件。</p> 
+<h2>参数</h2> 
+<p>-或-p或–stdin 直接从键盘读取要执行的指令。</p> 
+<p>-a&lt;地址&gt;或–requestor&lt;地址&gt; 执行邮件地址，以便寄送状态信息。</p> 
+<p>-b或–erturn-stdin 在屏幕上显示状态信息。</p> 
+<p>-c或–nocopy 不用将文件复制到缓冲区。</p> 
+<p>-C或–copy 将文件复制到缓冲区。</p> 
+<p>-g&lt;等级&gt;或–grade&lt;等级&gt; 指定文件传送作业的优先顺序。</p> 
+<p>-I或–config file 指定uux配置文件。</p> 
+<p>-j或–jobid 显示作业编号。</p> 
+<p>-l或–link 将本机上的文件连接到缓冲区。</p> 
+<p>-n或–notification=no 无论发生任何状态，都不寄邮件通知用户。</p> 
+<p>-r或–nouucico 不要立即启动uucico服务程序，仅将作业送到队列中，然后再执行。</p> 
+<p>-s&lt;文件&gt;或–status&lt;文件&gt; 将完成状态保存为指定的文件。</p> 
+<p>-v或–version 显示版本信息。</p> 
+<p>-x&lt;层级&gt;或–debug&lt;层级&gt; 指定排错层级。</p> 
+<p>-z或–notification=error 若发生错误，则以邮件来通知用户。</p> 
+<p>–help 显示帮助。</p> 
+<h2>例子</h2>

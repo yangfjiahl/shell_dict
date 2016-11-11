@@ -1,0 +1,55 @@
+<h2>语法</h2> 
+<p>modprobe [-acdlrtvV] [–help] [模块文件] [符号名称=符号值]</p> 
+<h2>功能介绍</h2> 
+<p>modprobe 可载入指定的个别模块，或是载入一组依赖的模块。modprobe 会根据 depmod 所产生的模块依赖关系，决定要载入那些模块。若在载入程序中发生错误，则 modprobe 会卸除整组模块。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a 或 –all</td> 
+   <td align="left">载入全部的模块</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-c 或 –show -conf</td> 
+   <td align="left">显示所有模块的设置信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d 或 –debug</td> 
+   <td align="left">使用排错模式</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-l 或 –list</td> 
+   <td align="left">显示可用模块</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-r 或 –remove</td> 
+   <td align="left">卸除闲置不用的模块</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-t 或 –type</td> 
+   <td align="left">指定模块类型</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v 或 –verbose</td> 
+   <td align="left">执行时显示详细信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-V 或 –versino</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–help</td> 
+   <td align="left">显示帮助信息</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示所有模块的设置信息：</p> 
+<pre><code class="language-bash"># modprobe --c
+</code></pre>

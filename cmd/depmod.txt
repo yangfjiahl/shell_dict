@@ -1,0 +1,48 @@
+<h2>语法</h2> 
+<p>depmod [-adeisvV] [–help] [模块名称]</p> 
+<h2>功能介绍</h2> 
+<p>depmod 可检测模块的相依性，提供 modprobe 在安装模块时使用。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a 或 –all</td> 
+   <td align="left">分析所有可用的模块。一般的用法会将depmod -a 命令加入 /etc/rc.d/rc.S(Slackware) 或 /etc/rc.d/rc.sysinit(RedHat Linux/Fedora Core) 中。如此，开机后即可自动分析模块的相依关系。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d 或 –debug</td> 
+   <td align="left">执行排错模式</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-e</td> 
+   <td align="left">属猪无法参照的符号</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-i</td> 
+   <td align="left">不检查符号表的版本</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s 或 –system -log</td> 
+   <td align="left">在系统记录中记录错误</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-v 或 –verbose</td> 
+   <td align="left">执行是显示详细的信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-V 或 –version</td> 
+   <td align="left">显示版本信息</td> 
+  </tr> 
+  <tr> 
+   <td align="left">–help</td> 
+   <td align="left">显示帮助</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2>

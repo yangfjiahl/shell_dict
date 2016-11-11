@@ -1,0 +1,43 @@
+<h2>语法</h2> 
+<p>last [-adRx] [-f &lt;记录文件&gt;] [-n &lt;显示行数&gt;] [账号名称] [终端]</p> 
+<h2>功能介绍</h2> 
+<p>单独执行 last 命令，它会读取位于 /var/log 目录下，名称为 wtmp 的文件，并把该文件的内容记录的登录系统的用户名单全部显示出来。可以指定账号名称或终端编号，让 last 命令仅列出指定范围的清单。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-a</td> 
+   <td align="left">把从何处登录系统的主机名称或IP地址显示在最后一行</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-d</td> 
+   <td align="left">将IP地址转换成主机名称。当用户从远程而非本队主机登录系统时，所记录的将不仅是主机名称，还包括该远程主机的IP地址。默认last命令会用IP地址来显示远程主机，使用这项参数可将其换成主机名称</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-f &lt;记录文件&gt;</td> 
+   <td align="left">指定记录文件。默认last命令回去读取 /var/log 目录里面的 wtmp 文件，如果您有林外的记录文件，可使用本参数指定它</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-n &lt;显示行数&gt; 或 -&lt;显示行数&gt;</td> 
+   <td align="left">设置显示名单的显示行数。如只想查询最后登录系统的10位用户名称，可将显示行数设成10。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-R</td> 
+   <td align="left">不显示登录系统的主机名称或IP地址</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-x</td> 
+   <td align="left">显示系统关闭、重新启动，以及执行等级的改变等信息。</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>查询最后登录系统的10位用户</p> 
+<pre><code class="language-bash"># last -n 10
+</code></pre>

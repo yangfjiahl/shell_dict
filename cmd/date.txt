@@ -1,0 +1,38 @@
+<h2>语法</h2> 
+<p>date [-i] [-d &lt;&gt;] [+ %a …]</p> 
+<p>或</p> 
+<p>date [-u] [-s &lt;字符串&gt;] [MMDDHHmmCCYYss]</p> 
+<p>或</p> 
+<p>date [–help] [–version]</p> 
+<h2>功能介绍</h2> 
+<p>第一种语法可用来系那是系统日期或时间，以 % 为开通的参数为格式参数，可指定日期或时间的显示格式。</p> 
+<p>第二种语法可用来设置日通日期与时间。只有管理员才有设置日期与时间的权限。</p> 
+<p>若不加任何参数，date 会以 %c 格式参数显示当前的日期与时间。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-d 或 –date=&lt;&gt;</td> 
+   <td align="left">显示字符串所值的日期与时间。字符串前后必须加上双引号。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-s 或 –set=&lt;&gt;</td> 
+   <td align="left">根据字符串来设置日期与时间。字符串前后必须加上双引号。使用此-s参数时，后面便不能再加上[MMDDhhmmCCYYss]的参数</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-u</td> 
+   <td align="left">显示GMT（格林威治标准时间）</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>显示当前系统的日期与时间：</p> 
+<pre><code class="language-bash"># date
+...
+</code></pre>

@@ -1,0 +1,12 @@
+<h2>语法</h2> 
+<p>expr argument operator argument</p> 
+<h2>功能介绍</h2> 
+<p>expr命令为Linux中的命令，一般用于整数值计算，但也可用于字符串操作。</p> 
+<h2>参数</h2> 
+<p>argument：为第一个参数</p> 
+<p>operator：为操作运算符</p> 
+<p>argument：为第二个参数</p> 
+<h2>例子</h2> 
+<pre><code class="language-bash"># expr 10 + 1
+11
+</code></pre>

@@ -1,0 +1,10 @@
+<h2>语法</h2> 
+<p>grpunconv</p> 
+<h2>功能介绍</h2> 
+<p>执行 grpunconv 命令可关闭组影子密码，它会把密码从 gshadow 文件内存回到 group 文件里。</p> 
+<h2>参数</h2> 
+<p>无。</p> 
+<h2>例子</h2> 
+<p>关闭组影子密码，方便直接编辑group文件建立、删除组名称：</p> 
+<pre><code class="language-bash"># grpunconv
+</code></pre>

@@ -1,0 +1,8 @@
+<h2>语法</h2> 
+<p>mv [options] source dest</p> 
+<p>mv [options] source… directory</p> 
+<h2>功能介绍</h2> 
+<p>将一个档案移至另一档案，或将数个档案移至另一目录。</p> 
+<h2>参数</h2> 
+<p>-i 若目的地已有同名档案，则先询问是否覆盖旧档。</p> 
+<h2>例子</h2>

@@ -1,0 +1,35 @@
+<h2>语法</h2> 
+<p>groupadd [-fr] [-g &lt;组识别码&gt; &lt;-o&gt;] [组名称]</p> 
+<h2>功能介绍</h2> 
+<p>需要在系统上简历组时，可用groupadd命令来完成这项工作。</p> 
+<h2>参数</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th align="left">参数</th> 
+   <th align="left">作用</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">-f</td> 
+   <td align="left">强制建立已存在的组。每隔组名称在该系统中都应该是唯一的且不重复的，假设所给予的组名称已经存在，则groupadd命令会返回错误信息。使用本参数可强制系统接受已经存在的组名称。</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-g</td> 
+   <td align="left">设定新建立组的识别码。若不附加这项参数，则系统会自行从500开始，一次分派给新建立的组使用，编号500之前则保留给系统各项服务的账号使用</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-o</td> 
+   <td align="left">重复使用组识别码。每个组识别码在系统中都应该是唯一且不重复的，假设使用“-g”参数指派组识别码，该编号缺已经存在，则groupadd命令会返回错误信息。配合参数“-o”使用，可强制系统使用已存在的组识别码。本参数仅和“-g”参数搭配使用才有效果</td> 
+  </tr> 
+  <tr> 
+   <td align="left">-r</td> 
+   <td align="left">简历系统组。系统提供各项服务时，必须使用某些组名，这些组的识别码都在0~499号，一般组的编号从500开始。使用此参数所建立的组识别码，其值将小于500，可利用它来简历系统服务所需的组。</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2>例子</h2> 
+<p>建立一个叫 tom 的组：</p> 
+<pre><code class="language-bash"># groupadd tom
+</code></pre>

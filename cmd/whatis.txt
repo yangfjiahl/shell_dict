@@ -1,0 +1,16 @@
+<h2>语法</h2> 
+<p>whatis [命令]</p> 
+<h2>功能介绍</h2> 
+<p>whatis命令是用于查询一个命令执行什么功能，并将查询结果打印到终端上。</p> 
+<h2>参数</h2> 
+<p>无</p> 
+<h2>例子</h2> 
+<p>查看 man 命令的描述：</p> 
+<pre><code class="language-bash"># whatis man
+man                  (1)  - format and display the on-line manual pages
+man                  (1p)  - display system documentation
+man                  (7)  - macros to format man pages
+man.config [man]     (5)  - configuration data for man
+man [manpath]        (1)  - format and display the on-line manual pages
+man-pages            (7)  - conventions for writing Linux man pages
+</code></pre>
